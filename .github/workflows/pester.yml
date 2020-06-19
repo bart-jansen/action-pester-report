@@ -22,5 +22,5 @@ jobs:
       with:
         inlineScript: |
            Install-Module -Name Pester -Force
-           Invoke-Pester $GITHUB_WORKSPACE/tests/*.tests.ps1 # -OutputFile $(System.DefaultWorkingDirectory)/TEST-CI-Infrastructure.xml -OutputFormat NUnitXML -EnableExit
+           Invoke-Pester ./tests/*.tests.ps1 # -OutputFile $(System.DefaultWorkingDirectory)/TEST-CI-Infrastructure.xml -OutputFormat NUnitXML -EnableExit
         azPSVersion: 'latest'
