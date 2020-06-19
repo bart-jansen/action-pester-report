@@ -1,0 +1,26 @@
+name: Pester tests
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
+
+    # Runs a single command using the runners shell
+    - name: Run a one-line script
+      run: echo Hello, world!
+      
+    - name: Azure PowerShell Action
+      uses: Azure/powershell@v1
+      with:
+        inlineScript: |
+           Install-Module -Name Pester -Force
+           Invoke-Pester @{Path= '$GITHUB_WORKSPACE/tests/*.tests.ps1'} # -OutputFile $(System.DefaultWorkingDirectory)/TEST-CI-Infrastructure.xml -OutputFormat NUnitXML -EnableExit
+        azPSVersion: 'latest'
