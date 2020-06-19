@@ -15,12 +15,12 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Run a one-line script
-      run: echo Hello, world!
+      run: echo $GITHUB_WORKSPACE
       
     - name: Azure PowerShell Action
       uses: Azure/powershell@v1
       with:
         inlineScript: |
            Install-Module -Name Pester -Force
-           Invoke-Pester ./tests/*.tests.ps1 # -OutputFile $(System.DefaultWorkingDirectory)/TEST-CI-Infrastructure.xml -OutputFormat NUnitXML -EnableExit
+           Invoke-Pester '$GITHUB_WORKSPACE/tests/*.tests.ps1' # -OutputFile $(System.DefaultWorkingDirectory)/TEST-CI-Infrastructure.xml -OutputFormat NUnitXML -EnableExit
         azPSVersion: 'latest'
