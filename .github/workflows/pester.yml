@@ -22,7 +22,7 @@ jobs:
       with:
         inlineScript: |
            Install-Module -Name Pester -Force
-           Invoke-Pester './tests/*.tests.ps1' -CI # -OutputFile ./surefire-reports/TEST-CI.xml -OutputFormat NUnitXML -EnableExit
+           Invoke-Pester './tests/*.tests.ps1' -OutputFile './TEST-CI.xml' -OutputFormat 'NUnitXML'
         azPSVersion: 'latest'
         
     - name: Publish Test Report
