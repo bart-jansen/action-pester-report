@@ -25,10 +25,13 @@ jobs:
            Invoke-Pester './tests/*.tests.ps1' # -OutputFile './surefire-reports/TEST-CI.xml' -OutputFormat 'NUnitXML'
         azPSVersion: 'latest'
         
-    - name: Publish Test Report
-      uses: scacap/action-surefire-report@v1
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        #path: 'testResults.xml'
+    - name: Cat test file
+      run: cat './surefire-reports/TEST-CI.xml'
+        
+#     - name: Publish Test Report
+#       uses: scacap/action-surefire-report@v1
+#       with:
+#         github_token: ${{ secrets.GITHUB_TOKEN }}
+#         #path: 'testResults.xml'
         
     
