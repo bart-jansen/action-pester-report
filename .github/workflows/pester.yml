@@ -22,5 +22,12 @@ jobs:
       with:
         inlineScript: |
            Install-Module -Name Pester -Force
-           Invoke-Pester './tests/*.tests.ps1' # -OutputFile $(System.DefaultWorkingDirectory)/TEST-CI-Infrastructure.xml -OutputFormat NUnitXML -EnableExit
+           Invoke-Pester './tests/*.tests.ps1' -OutputFile ./surefire-reports/TEST-CI.xml -OutputFormat NUnitXML -EnableExit
         azPSVersion: 'latest'
+        
+    - name: Publish Test Report
+      uses: scacap/action-surefire-report@v1
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        
+    
