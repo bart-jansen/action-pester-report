@@ -22,11 +22,16 @@ jobs:
       with:
         inlineScript: |
            Install-Module -Name Pester -Force
-           Invoke-Pester './tests/*.tests.ps1' -OutputFile './surefire-reports/TEST-CI.xml' -OutputFormat 'NUnitXML'
+           Invoke-Pester './tests/*.tests.ps1' -OutputFile './test-reports/TEST-CI.xml' -OutputFormat 'NUnitXML'
         azPSVersion: 'latest'
         
     - name: Cat test file
-      run: cat './surefire-reports/TEST-CI.xml'
+      run: cat './test-reports/TEST-CI.xml'
+
+    - name: Generate Pester Report
+      uses: ./ # Uses an action in the root directory
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
         
 #     - name: Publish Test Report
 #       uses: scacap/action-surefire-report@v1

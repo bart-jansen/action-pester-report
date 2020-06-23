@@ -1,0 +1,21 @@
+name: 'Pester Report'
+description: ''
+branding:
+  icon: 'check-square'
+  color: 'green'
+inputs:
+  github_token:
+    description: 'Github Token (usually ${{ secrets.GITHUB_TOKEN }})'
+    required: false
+    default: '**/test-reports/TEST-*.xml'
+  path:
+    description: 'pester xml report path in glob format'
+    required: false
+    default: '**/test-reports/TEST-*.xml'
+  name:
+    description: 'name for test reports'
+    required: false
+    default: 'Test Report'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
