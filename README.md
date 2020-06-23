@@ -1,6 +1,6 @@
 # Pester Report
 
-This action processes a  generates a Github Actions report annotations from a given Pester output.
+This action generates a Github Actions Check report with annotations for NUnit-formatted Pester tests.
 
 ## Inputs
 
@@ -22,6 +22,6 @@ Optional - Name of the generated report. Default `Test Report`.
 ```yml
 uses: bart-jansen/action-pester-report@v1
 with:
-  github_token:  ${{ secrets.GITHUB_TOKEN }}
+  github_token: ${{ secrets.GITHUB_TOKEN }}
   path: '**/test-reports/TEST-*.xml'
 ```
