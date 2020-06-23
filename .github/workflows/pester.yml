@@ -29,7 +29,7 @@ jobs:
       run: cat './test-reports/TEST-CI.xml'
 
     - name: Generate Pester Report
-      uses: ./ # Uses an action in the root directory
+      uses: bart-jansen/pester-tests@master # Uses an action in the root directory
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         
