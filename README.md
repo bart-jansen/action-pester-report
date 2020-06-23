@@ -22,5 +22,6 @@ Optional - Name of the generated report. Default `Test Report`.
 ```yml
 uses: bart-jansen/action-pester-report@v1
 with:
+  github_token:  ${{ secrets.GITHUB_TOKEN }}
   path: '**/test-reports/TEST-*.xml'
 ```
