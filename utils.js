@@ -16,7 +16,7 @@ const resolvePath = async filename => {
 };
 
 async function parseFile(file) {
-    console.log(`Parsing file ${file}`);
+    core.info(`Parsing file ${file}`);
     let count = 0;
     let skipped = 0;
     let annotations = [];
@@ -28,13 +28,10 @@ async function parseFile(file) {
 
     for (const testCase of testCases) {
         count++;
-        console.log(testCase)
 
         if (testCase.skipped) skipped++;
         
         if (testCase.failure || testCase.error) {
-            console.log('jaaaa error');
-            console.log( testCase.failure);
             const stackTrace = (
                 (testCase.failure && testCase.failure['stack-trace']._text) ||
                 (testCase.error && testCase.error['stack-trace']._text) ||
