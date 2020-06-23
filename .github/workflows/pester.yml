@@ -31,7 +31,7 @@ jobs:
     - name: Generate Pester Report
       uses: bart-jansen/pester-tests@master # Uses an action in the root directory
       with:
-        github_token: ${{ github.token }}
+        github_token:  ${{ secrets.GITHUB_TOKEN }}
         
 #     - name: Publish Test Report
 #       uses: scacap/action-surefire-report@v1
