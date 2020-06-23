@@ -11,7 +11,7 @@ const github = require('@actions/github');
         let count = 10,
             skipped = 0,
             annotations = [];
-            
+
         const foundResults = count > 0 || skipped > 0;
         const title = foundResults
             ? `${count} tests run, ${skipped} skipped, ${annotations.length} failed.`
@@ -42,7 +42,7 @@ const github = require('@actions/github');
     
         core.debug(JSON.stringify(createCheckRequest, null, 2));
     
-        const octokit = new github.GitHub(githubToken);
+        const octokit = github.getOctokit(githubToken);
         await octokit.checks.create(createCheckRequest);
     } catch (error) {
         core.setFailed(error.message);
