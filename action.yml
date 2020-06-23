@@ -6,7 +6,7 @@ branding:
 inputs:
   github_token:
     description: 'Github Token (usually ${{ secrets.GITHUB_TOKEN }})'
-    required: false
+    required: true
     default: '**/test-reports/TEST-*.xml'
   path:
     description: 'pester xml report path in glob format'
