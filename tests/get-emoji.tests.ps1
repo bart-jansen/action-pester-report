@@ -4,10 +4,10 @@ Describe "Get-Emoji" {
     }
 
     It "Gets cactus" {
-        Get-Emoji -Emoji avocado | Should -Be '🌵'
+        Get-Emoji -Emoji cactus | Should -Be '🌵'
     }
 
     It "Gets wine" {
-        Get-Emoji -Emoji avocado | Should -Be '🍷'
+        Get-Emoji -Emoji wine | Should -Be '🍷'
     }
 }
