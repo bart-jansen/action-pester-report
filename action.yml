@@ -5,7 +5,7 @@ branding:
   color: 'green'
 inputs:
   github_token:
-    description: 'Github Token (usually ${{ secrets.GITHUB_TOKEN }})'
+    description: 'Github Token'
     required: true
     default: '**/test-reports/TEST-*.xml'
   path:
