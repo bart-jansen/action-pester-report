@@ -62,9 +62,7 @@ const github = __webpack_require__(558);
         const githubToken = core.getInput('github_token');
         const name = core.getInput('name');
     
-        let count = 10,
-            skipped = 0,
-            annotations = [];
+        let { count, skipped, annotations } = await parseTestReports(reportPath);
 
         const foundResults = count > 0 || skipped > 0;
         const title = foundResults

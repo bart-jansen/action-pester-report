@@ -21,6 +21,8 @@
   "homepage": "https://github.com/bart-jansen/pester-tests#readme",
   "dependencies": {
     "@actions/core": "^1.2.4",
-    "@actions/github": "^3.0.0"
+    "@actions/github": "^3.0.0",
+    "@actions/glob": "^0.1.0",
+    "xml-js": "^1.6.11"
   }
 }
