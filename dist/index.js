@@ -2527,7 +2527,8 @@ const findNested = (obj, key, pwshScript, res) => {
                 res.push(obj[i]);
             } else if ('[object Array]' === ts.call(obj[i]) || '[object Object]' === ts.call(obj[i])) {
                 if(obj[i] && obj[i].name && obj[i].name.includes('.ps1')) {
-                    pwshScript = obj[i].name
+                    // get pwsh file name from full path
+                    pwshScript = obj[i].name.replace(/^.*[\\\/]/, '');
                 }
                 findNested(obj[i], key, pwshScript, res);
             }
@@ -2576,7 +2577,7 @@ async function parseFile(file) {
                 const line = 7;
     
                 const path = await resolvePath(fileName);
-                const title = `${fileName}.${testCase._attributes.name}`;
+                const title = testCase._attributes.name;
                 core.info(`${path}:${line} | ${message.replace(/\n/g, ' ')}`);
     
                 annotations.push({
