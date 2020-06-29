@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="459" errors="0" failures="7" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2016-06-29" time="08:34:50">
+  <environment user="Dave" machine-name="DWLAPTOP" cwd="C:\Users\Dave\Documents\GitHub\pester" user-domain="DWLAPTOP" platform="Microsoft Windows 10 Pro|C:\WINDOWS|\Device\Harddisk0\Partition4" nunit-version="2.5.8.0" os-version="10.0.10586" clr-version="4.0.30319.42000" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="TestFixture" name="C:\Users\Dave\Documents\GitHub\pester\Examples\Calculator\Add-Numbers.Tests.ps1" executed="True" result="Success" success="False" time="0.5723" asserts="0" description="C:\Users\Dave\Documents\GitHub\pester\Examples\Calculator\Add-Numbers.Tests.ps1">
+    <results>
+      <test-suite type="TestFixture" name="Add-Numbers" executed="True" result="Success" success="False" time="0.5723" asserts="0" description="Add-Numbers">
+        <results>
+          <test-case description="adds positive numbers" name="Add-Numbers.adds positive numbers" time="0.4481" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="adds negative numbers" name="Add-Numbers.adds negative numbers" time="0.0704" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="adds one negative number to positive number" name="Add-Numbers.adds one negative number to positive number" time="0.0252" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="concatenates strings if given strings" name="Add-Numbers.concatenates strings if given strings" time="0.0157" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="should not be 0" name="Add-Numbers.should not be 0" time="0.0129" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+  <test-suite type="TestFixture" name="C:\Users\Dave\Documents\GitHub\pester\Examples\Validator\Validator.Tests.ps1" executed="True" result="Success" success="False" time="0.677" asserts="0" description="C:\Users\Dave\Documents\GitHub\pester\Examples\Validator\Validator.Tests.ps1">
+    <results>
+      <test-suite type="TestFixture" name="Testing a validator" executed="True" result="Success" success="False" time="0.4989" asserts="0" description="Testing a validator">
+        <results>
+          <test-case description="calls MyValidator" name="Testing a validator.calls MyValidator" time="0.4989" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="MyValidator" executed="True" result="Success" success="False" time="0.1781" asserts="0" description="MyValidator">
+        <results>
+          <test-case description="passes things that start with the letter S" name="MyValidator.passes things that start with the letter S" time="0.1664" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="does not pass a param that does not start with S" name="MyValidator.does not pass a param that does not start with S" time="0.0117" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+        <test-suite type="TestFixture" name="ResolveTestScripts" executed="True" result="Success" success="False" time="0.9423" asserts="0" description="ResolveTestScripts">
+        <results>
+          <test-suite type="TestFixture" name="Passing in Dictionaries instead of Strings" executed="True" result="Success" success="False" time="0.3124" asserts="0" description="Passing in Dictionaries instead of Strings">
+            <results>
+              <test-case description="Allows the use of a &quot;P&quot; key instead of &quot;Path&quot;" name="ResolveTestScripts.Passing in Dictionaries instead of Strings.Allows the use of a &quot;P&quot; key instead of &quot;Path&quot;" time="0.1387" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Allows the use of an &quot;Arguments&quot; key in the dictionary" name="ResolveTestScripts.Passing in Dictionaries instead of Strings.Allows the use of an &quot;Arguments&quot; key in the dictionary" time="0.0192" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Allows the use of an &quot;Args&quot; key in the dictionary" name="ResolveTestScripts.Passing in Dictionaries instead of Strings.Allows the use of an &quot;Args&quot; key in the dictionary" time="0.022" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Allows the use of an &quot;A&quot; key in the dictionary" name="ResolveTestScripts.Passing in Dictionaries instead of Strings.Allows the use of an &quot;A&quot; key in the dictionary" time="0.0244" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Allows the use of a &quot;Parameters&quot; key in the dictionary" name="ResolveTestScripts.Passing in Dictionaries instead of Strings.Allows the use of a &quot;Parameters&quot; key in the dictionary" time="0.0263" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Allows the use of a &quot;Params&quot; key in the dictionary" name="ResolveTestScripts.Passing in Dictionaries instead of Strings.Allows the use of a &quot;Params&quot; key in the dictionary" time="0.034" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Throws an error if no Path is specified" name="ResolveTestScripts.Passing in Dictionaries instead of Strings.Throws an error if no Path is specified" time="0.0227" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Throws an error if a Parameters key is used, but does not contain an IDictionary object" name="ResolveTestScripts.Passing in Dictionaries instead of Strings.Throws an error if a Parameters key is used, but does not contain an IDictionary object" time="0.0249" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-case description="Resolves non-wildcarded file paths regardless of whether the file ends with Tests.ps1" name="ResolveTestScripts.Resolves non-wildcarded file paths regardless of whether the file ends with Tests.ps1" time="0.5467" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Finds only *.Tests.ps1 files when the path contains wildcards" name="ResolveTestScripts.Finds only *.Tests.ps1 files when the path contains wildcards" time="0.0216" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Finds only *.Tests.ps1 files when the path refers to a directory and does not contain wildcards" name="ResolveTestScripts.Finds only *.Tests.ps1 files when the path refers to a directory and does not contain wildcards" time="0.0176" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Assigns empty array and hashtable to the Arguments and Parameters properties when none are specified by the caller" name="ResolveTestScripts.Assigns empty array and hashtable to the Arguments and Parameters properties when none are specified by the caller" time="0.044" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

@@ -1,0 +1,1500 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="459" errors="0" failures="7" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2016-06-29" time="08:34:50">
+  <environment user="Dave" machine-name="DWLAPTOP" cwd="C:\Users\Dave\Documents\GitHub\pester" user-domain="DWLAPTOP" platform="Microsoft Windows 10 Pro|C:\WINDOWS|\Device\Harddisk0\Partition4" nunit-version="2.5.8.0" os-version="10.0.10586" clr-version="4.0.30319.42000" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="TestFixture" name="C:\Users\Dave\Documents\GitHub\pester\Examples\Calculator\Add-Numbers.Tests.ps1" executed="True" result="Success" success="False" time="0.5723" asserts="0" description="C:\Users\Dave\Documents\GitHub\pester\Examples\Calculator\Add-Numbers.Tests.ps1">
+    <results>
+      <test-suite type="TestFixture" name="Add-Numbers" executed="True" result="Success" success="False" time="0.5723" asserts="0" description="Add-Numbers">
+        <results>
+          <test-case description="adds positive numbers" name="Add-Numbers.adds positive numbers" time="0.4481" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="adds negative numbers" name="Add-Numbers.adds negative numbers" time="0.0704" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="adds one negative number to positive number" name="Add-Numbers.adds one negative number to positive number" time="0.0252" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="concatenates strings if given strings" name="Add-Numbers.concatenates strings if given strings" time="0.0157" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="should not be 0" name="Add-Numbers.should not be 0" time="0.0129" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+  <test-suite type="TestFixture" name="C:\Users\Dave\Documents\GitHub\pester\Examples\Validator\Validator.Tests.ps1" executed="True" result="Success" success="False" time="0.677" asserts="0" description="C:\Users\Dave\Documents\GitHub\pester\Examples\Validator\Validator.Tests.ps1">
+    <results>
+      <test-suite type="TestFixture" name="Testing a validator" executed="True" result="Success" success="False" time="0.4989" asserts="0" description="Testing a validator">
+        <results>
+          <test-case description="calls MyValidator" name="Testing a validator.calls MyValidator" time="0.4989" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="MyValidator" executed="True" result="Success" success="False" time="0.1781" asserts="0" description="MyValidator">
+        <results>
+          <test-case description="passes things that start with the letter S" name="MyValidator.passes things that start with the letter S" time="0.1664" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="does not pass a param that does not start with S" name="MyValidator.does not pass a param that does not start with S" time="0.0117" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+  <test-suite type="TestFixture" name="C:\Users\Dave\Documents\GitHub\pester\Functions\Assertions\Be.Tests.ps1" executed="True" result="Success" success="False" time="1.1609" asserts="0" description="C:\Users\Dave\Documents\GitHub\pester\Functions\Assertions\Be.Tests.ps1">
+    <results>
+      <test-suite type="TestFixture" name="PesterBe" executed="True" result="Success" success="False" time="0.3689" asserts="0" description="PesterBe">
+        <results>
+          <test-case description="returns true if the 2 arguments are equal" name="PesterBe.returns true if the 2 arguments are equal" time="0.1763" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="returns true if the 2 arguments are equal and have different case" name="PesterBe.returns true if the 2 arguments are equal and have different case" time="0.0218" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="returns false if the 2 arguments are not equal" name="PesterBe.returns false if the 2 arguments are not equal" time="0.0247" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Compares Arrays properly" name="PesterBe.Compares Arrays properly" time="0.037" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Compares arrays with correct case-insensitive behavior" name="PesterBe.Compares arrays with correct case-insensitive behavior" time="0.0299" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Handles reference types properly" name="PesterBe.Handles reference types properly" time="0.0214" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Handles arrays with nested arrays" name="PesterBe.Handles arrays with nested arrays" time="0.0578" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="PesterBeFailureMessage" executed="True" result="Success" success="False" time="0.3852" asserts="0" description="PesterBeFailureMessage">
+        <results>
+          <test-case description="Returns nothing for two identical strings" name="PesterBeFailureMessage.Returns nothing for two identical strings" time="0.2223" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Outputs less verbose message for two different objects that are not strings" name="PesterBeFailureMessage.Outputs less verbose message for two different objects that are not strings" time="0.0159" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Outputs verbose message for two strings of different length" name="PesterBeFailureMessage.Outputs verbose message for two strings of different length" time="0.0385" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Outputs verbose message for two different strings of the same length" name="PesterBeFailureMessage.Outputs verbose message for two different strings of the same length" time="0.0233" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Replaces non-printable characters correctly" name="PesterBeFailureMessage.Replaces non-printable characters correctly" time="0.0477" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="The arrow points to the correct position when non-printable characters are replaced before the difference" name="PesterBeFailureMessage.The arrow points to the correct position when non-printable characters are replaced before the difference" time="0.0214" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="The arrow points to the correct position when non-printable characters are replaced after the difference" name="PesterBeFailureMessage.The arrow points to the correct position when non-printable characters are replaced after the difference" time="0.0162" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="BeExactly" executed="True" result="Success" success="False" time="0.2424" asserts="0" description="BeExactly">
+        <results>
+          <test-case description="passes if letter case matches" name="BeExactly.passes if letter case matches" time="0.1491" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="fails if letter case doesn't match" name="BeExactly.fails if letter case doesn't match" time="0.0152" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="passes for numbers" name="BeExactly.passes for numbers" time="0.0265" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Compares Arrays properly" name="BeExactly.Compares Arrays properly" time="0.031" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Compares arrays with correct case-sensitive behavior" name="BeExactly.Compares arrays with correct case-sensitive behavior" time="0.0207" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="PesterBeExactlyFailureMessage" executed="True" result="Success" success="False" time="0.1643" asserts="0" description="PesterBeExactlyFailureMessage">
+        <results>
+          <test-case description="Writes verbose message for strings that differ by case" name="PesterBeExactlyFailureMessage.Writes verbose message for strings that differ by case" time="0.1643" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+  <test-suite type="TestFixture" name="C:\Users\Dave\Documents\GitHub\pester\Functions\Assertions\BeGreaterThan.Tests.ps1" executed="True" result="Success" success="False" time="0.1852" asserts="0" description="C:\Users\Dave\Documents\GitHub\pester\Functions\Assertions\BeGreaterThan.Tests.ps1">
+    <results>
+      <test-suite type="TestFixture" name="PesterBeGreaterThan" executed="True" result="Success" success="False" time="0.1852" asserts="0" description="PesterBeGreaterThan">
+        <results>
+          <test-case description="passes if value greater than expected" name="PesterBeGreaterThan.passes if value greater than expected" time="0.1429" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="fails if values equal" name="PesterBeGreaterThan.fails if values equal" time="0.0148" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="fails if value less than expected" name="PesterBeGreaterThan.fails if value less than expected" time="0.0275" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+  <test-suite type="TestFixture" name="C:\Users\Dave\Documents\GitHub\pester\Functions\Assertions\BeLessThan.Tests.ps1" executed="True" result="Success" success="False" time="0.2858" asserts="0" description="C:\Users\Dave\Documents\GitHub\pester\Functions\Assertions\BeLessThan.Tests.ps1">
+    <results>
+      <test-suite type="TestFixture" name="PesterBeLessThan" executed="True" result="Success" success="False" time="0.2858" asserts="0" description="PesterBeLessThan">
+        <results>
+          <test-case description="passes if value Less than expected" name="PesterBeLessThan.passes if value Less than expected" time="0.162" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="fails if values equal" name="PesterBeLessThan.fails if values equal" time="0.04" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="fails if value greater than expected" name="PesterBeLessThan.fails if value greater than expected" time="0.0838" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+  <test-suite type="TestFixture" name="C:\Users\Dave\Documents\GitHub\pester\Functions\Assertions\BeLike.Tests.ps1" executed="True" result="Success" success="False" time="0.2715" asserts="0" description="C:\Users\Dave\Documents\GitHub\pester\Functions\Assertions\BeLike.Tests.ps1">
+    <results>
+      <test-suite type="TestFixture" name="BeLike" executed="True" result="Success" success="False" time="0.2715" asserts="0" description="BeLike">
+        <results>
+          <test-case description="returns true for things that are like wildcard" name="BeLike.returns true for things that are like wildcard" time="0.2478" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="returns false for things that do not match" name="BeLike.returns false for things that do not match" time="0.0114" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="passes for strings with different case" name="BeLike.passes for strings with different case" time="0.0123" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+  <test-suite type="TestFixture" name="C:\Users\Dave\Documents\GitHub\pester\Functions\Assertions\BeLikeExactly.Tests.ps1" executed="True" result="Success" success="False" time="0.1694" asserts="0" description="C:\Users\Dave\Documents\GitHub\pester\Functions\Assertions\BeLikeExactly.Tests.ps1">
+    <results>
+      <test-suite type="TestFixture" name="BeLike" executed="True" result="Success" success="False" time="0.1694" asserts="0" description="BeLike">
+        <results>
+          <test-case description="returns true for things that are like wildcard" name="BeLike.returns true for things that are like wildcard" time="0.1427" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="returns false for things that do not match" name="BeLike.returns false for things that do not match" time="0.0123" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="fails for strings with different case" name="BeLike.fails for strings with different case" time="0.0144" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+  <test-suite type="TestFixture" name="C:\Users\Dave\Documents\GitHub\pester\Functions\Assertions\BeNullOrEmpty.Tests.ps1" executed="True" result="Success" success="False" time="0.1989" asserts="0" description="C:\Users\Dave\Documents\GitHub\pester\Functions\Assertions\BeNullOrEmpty.Tests.ps1">
+    <results>
+      <test-suite type="TestFixture" name="PesterBeNullOrEmpty" executed="True" result="Success" success="False" time="0.1989" asserts="0" description="PesterBeNullOrEmpty">
+        <results>
+          <test-case description="should return true if null" name="PesterBeNullOrEmpty.should return true if null" time="0.148" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="should return true if empty string" name="PesterBeNullOrEmpty.should return true if empty string" time="0.0141" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="should return true if empty array" name="PesterBeNullOrEmpty.should return true if empty array" time="0.0126" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Should return false for non-empty strings or arrays" name="PesterBeNullOrEmpty.Should return false for non-empty strings or arrays" time="0.0242" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+  <test-suite type="TestFixture" name="C:\Users\Dave\Documents\GitHub\pester\Functions\Assertions\BeOfType.Tests.ps1" executed="True" result="Success" success="False" time="0.19" asserts="0" description="C:\Users\Dave\Documents\GitHub\pester\Functions\Assertions\BeOfType.Tests.ps1">
+    <results>
+      <test-suite type="TestFixture" name="PesterBeOfType" executed="True" result="Success" success="False" time="0.19" asserts="0" description="PesterBeOfType">
+        <results>
+          <test-case description="passes if value is of the expected type" name="PesterBeOfType.passes if value is of the expected type" time="0.1546" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="fails if value is of a different types" name="PesterBeOfType.fails if value is of a different types" time="0.0185" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="fails if type isn't a type" name="PesterBeOfType.fails if type isn't a type" time="0.0169" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+  <test-suite type="TestFixture" name="C:\Users\Dave\Documents\GitHub\pester\Functions\Assertions\Contain.Tests.ps1" executed="True" result="Success" success="False" time="0.4237" asserts="0" description="C:\Users\Dave\Documents\GitHub\pester\Functions\Assertions\Contain.Tests.ps1">
+    <results>
+      <test-suite type="TestFixture" name="PesterContain" executed="True" result="Success" success="False" time="0.4237" asserts="0" description="PesterContain">
+        <results>
+          <test-suite type="TestFixture" name="when testing file contents" executed="True" result="Success" success="False" time="0.4237" asserts="0" description="when testing file contents">
+            <results>
+              <test-case description="returns true if the file contains the specified content" name="PesterContain.when testing file contents.returns true if the file contains the specified content" time="0.3775" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="returns true if the file contains the specified content with different case" name="PesterContain.when testing file contents.returns true if the file contains the specified content with different case" time="0.0143" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="returns false if the file does not contain the specified content" name="PesterContain.when testing file contents.returns false if the file does not contain the specified content" time="0.0155" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="returns true if the file contains the specified UTF8 content" name="PesterContain.when testing file contents.returns true if the file contains the specified UTF8 content" time="0.0164" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+  <test-suite type="TestFixture" name="C:\Users\Dave\Documents\GitHub\pester\Functions\Assertions\ContainExactly.Tests.ps1" executed="True" result="Success" success="False" time="0.5062" asserts="0" description="C:\Users\Dave\Documents\GitHub\pester\Functions\Assertions\ContainExactly.Tests.ps1">
+    <results>
+      <test-suite type="TestFixture" name="PesterContainExactly" executed="True" result="Success" success="False" time="0.5062" asserts="0" description="PesterContainExactly">
+        <results>
+          <test-suite type="TestFixture" name="when testing file contents" executed="True" result="Success" success="False" time="0.5062" asserts="0" description="when testing file contents">
+            <results>
+              <test-case description="returns true if the file contains the specified content exactly" name="PesterContainExactly.when testing file contents.returns true if the file contains the specified content exactly" time="0.4693" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="returns false if the file does not contain the specified content exactly" name="PesterContainExactly.when testing file contents.returns false if the file does not contain the specified content exactly" time="0.0148" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="returns true if the file contains the specified Unicode content exactyle" name="PesterContainExactly.when testing file contents.returns true if the file contains the specified Unicode content exactyle" time="0.0221" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+  <test-suite type="TestFixture" name="C:\Users\Dave\Documents\GitHub\pester\Functions\Assertions\ContainMultiline.Tests.ps1" executed="True" result="Success" success="False" time="0.5132" asserts="0" description="C:\Users\Dave\Documents\GitHub\pester\Functions\Assertions\ContainMultiline.Tests.ps1">
+    <results>
+      <test-suite type="TestFixture" name="PesterContainMultiline" executed="True" result="Success" success="False" time="0.5132" asserts="0" description="PesterContainMultiline">
+        <results>
+          <test-suite type="TestFixture" name="when testing file contents" executed="True" result="Success" success="False" time="0.5132" asserts="0" description="when testing file contents">
+            <results>
+              <test-case description="returns true if the file matches the specified content on one line" name="PesterContainMultiline.when testing file contents.returns true if the file matches the specified content on one line" time="0.4856" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="returns true if the file matches the specified content across multiple lines" name="PesterContainMultiline.when testing file contents.returns true if the file matches the specified content across multiple lines" time="0.0129" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="returns false if the file does not contain the specified content" name="PesterContainMultiline.when testing file contents.returns false if the file does not contain the specified content" time="0.0147" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+  <test-suite type="TestFixture" name="C:\Users\Dave\Documents\GitHub\pester\Functions\Assertions\Exist.Tests.ps1" executed="True" result="Success" success="False" time="0.3387" asserts="0" description="C:\Users\Dave\Documents\GitHub\pester\Functions\Assertions\Exist.Tests.ps1">
+    <results>
+      <test-suite type="TestFixture" name="PesterExist" executed="True" result="Success" success="False" time="0.3387" asserts="0" description="PesterExist">
+        <results>
+          <test-case description="returns true for paths that exist" name="PesterExist.returns true for paths that exist" time="0.2678" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="returns false for paths do not exist" name="PesterExist.returns false for paths do not exist" time="0.0139" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="works for path with escaped [ ] characters" name="PesterExist.works for path with escaped [ ] characters" time="0.0158" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="returns correct result for function drive" name="PesterExist.returns correct result for function drive" time="0.0137" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="returns correct result for env drive" name="PesterExist.returns correct result for env drive" time="0.015" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="returns correct result for env drive" name="PesterExist.returns correct result for env drive" time="0.0125" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+  <test-suite type="TestFixture" name="C:\Users\Dave\Documents\GitHub\pester\Functions\Assertions\Match.Tests.ps1" executed="True" result="Success" success="False" time="0.1962" asserts="0" description="C:\Users\Dave\Documents\GitHub\pester\Functions\Assertions\Match.Tests.ps1">
+    <results>
+      <test-suite type="TestFixture" name="Match" executed="True" result="Success" success="False" time="0.1962" asserts="0" description="Match">
+        <results>
+          <test-case description="returns true for things that match" name="Match.returns true for things that match" time="0.1536" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="returns false for things that do not match" name="Match.returns false for things that do not match" time="0.0151" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="passes for strings with different case" name="Match.passes for strings with different case" time="0.0124" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="uses regular expressions" name="Match.uses regular expressions" time="0.0151" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+  <test-suite type="TestFixture" name="C:\Users\Dave\Documents\GitHub\pester\Functions\Assertions\MatchExactly.Tests.ps1" executed="True" result="Success" success="False" time="0.1805" asserts="0" description="C:\Users\Dave\Documents\GitHub\pester\Functions\Assertions\MatchExactly.Tests.ps1">
+    <results>
+      <test-suite type="TestFixture" name="MatchExactly" executed="True" result="Success" success="False" time="0.1805" asserts="0" description="MatchExactly">
+        <results>
+          <test-case description="returns true for things that match exactly" name="MatchExactly.returns true for things that match exactly" time="0.154" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="returns false for things that do not match exactly" name="MatchExactly.returns false for things that do not match exactly" time="0.0133" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="uses regular expressions" name="MatchExactly.uses regular expressions" time="0.0132" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+  <test-suite type="TestFixture" name="C:\Users\Dave\Documents\GitHub\pester\Functions\Assertions\PesterThrow.Tests.ps1" executed="True" result="Success" success="False" time="1.1982" asserts="0" description="C:\Users\Dave\Documents\GitHub\pester\Functions\Assertions\PesterThrow.Tests.ps1">
+    <results>
+      <test-suite type="TestFixture" name="PesterThrow" executed="True" result="Success" success="False" time="0.4306" asserts="0" description="PesterThrow">
+        <results>
+          <test-case description="returns true if the statement throws an exception" name="PesterThrow.returns true if the statement throws an exception" time="0.1813" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="returns false if the statement does not throw an exception" name="PesterThrow.returns false if the statement does not throw an exception" time="0.0286" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="returns true if the statement throws an exception and the actual error text matches the expected error text" name="PesterThrow.returns true if the statement throws an exception and the actual error text matches the expected error text" time="0.0205" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="returns false if the statement throws an exception and the actual error does not match the expected error text" name="PesterThrow.returns false if the statement throws an exception and the actual error does not match the expected error text" time="0.0198" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="returns true if the statement throws an exception and the actual error text matches the expected error pattern" name="PesterThrow.returns true if the statement throws an exception and the actual error text matches the expected error pattern" time="0.0266" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="returns true if the statement throws an exception and the actual fully-qualified error id matches the expected error id" name="PesterThrow.returns true if the statement throws an exception and the actual fully-qualified error id matches the expected error id" time="0.0224" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="returns false if the statement throws an exception and the actual fully-qualified error id does not match the expected error id" name="PesterThrow.returns false if the statement throws an exception and the actual fully-qualified error id does not match the expected error id" time="0.018" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="returns true if the statement throws an exception and the actual error text and the fully-qualified error id match the expected error text and error id" name="PesterThrow.returns true if the statement throws an exception and the actual error text and the fully-qualified error id match the expected error text and error id" time="0.0244" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="returns false if the statement throws an exception and the actual error text and fully-qualified error id do not match the expected error text and error id" name="PesterThrow.returns false if the statement throws an exception and the actual error text and fully-qualified error id do not match the expected error text and error id" time="0.0228" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="returns false if the statement throws an exception and the actual fully-qualified error id does not match the expected error id when the actual error text does match the expected error text" name="PesterThrow.returns false if the statement throws an exception and the actual fully-qualified error id does not match the expected error id when the actual error text does match the expected error text" time="0.0206" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="returns false if the statement throws an exception and the actual error text does not match the expected error text when the actual error id does match the expected error id" name="PesterThrow.returns false if the statement throws an exception and the actual error text does not match the expected error text when the actual error id does match the expected error id" time="0.0192" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="throws ArgumentException if null ScriptBlock is provided" name="PesterThrow.throws ArgumentException if null ScriptBlock is provided" time="0.0264" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Get-DoMessagesMatch" executed="True" result="Success" success="False" time="0.1805" asserts="0" description="Get-DoMessagesMatch">
+        <results>
+          <test-case description="returns true if the actual message is the same as the expected message" name="Get-DoMessagesMatch.returns true if the actual message is the same as the expected message" time="0.135" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="returns false if the actual message is not the same as the expected message" name="Get-DoMessagesMatch.returns false if the actual message is not the same as the expected message" time="0.0177" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="returns false is there's no expectation" name="Get-DoMessagesMatch.returns false is there's no expectation" time="0.015" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="returns true if the expected error is contained in the actual message" name="Get-DoMessagesMatch.returns true if the expected error is contained in the actual message" time="0.0128" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="PesterThrowFailureMessage" executed="True" result="Success" success="False" time="0.3531" asserts="0" description="PesterThrowFailureMessage">
+        <results>
+          <test-case description="returns false if the actual message is not the same as the expected message" name="PesterThrowFailureMessage.returns false if the actual message is not the same as the expected message" time="0.1799" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="returns true if the actual message is the same as the expected message" name="PesterThrowFailureMessage.returns true if the actual message is the same as the expected message" time="0.024" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="returns false if the actual error id is not the same as the expected error id" name="PesterThrowFailureMessage.returns false if the actual error id is not the same as the expected error id" time="0.0307" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="returns true if the actual error id is the same as the expected error id" name="PesterThrowFailureMessage.returns true if the actual error id is the same as the expected error id" time="0.0287" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="returns false if the actual message and error id are not the same as the expected message and error id" name="PesterThrowFailureMessage.returns false if the actual message and error id are not the same as the expected message and error id" time="0.0296" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="returns false if the actual message is not the same as the expected message when the actual error id and expected error id match" name="PesterThrowFailureMessage.returns false if the actual message is not the same as the expected message when the actual error id and expected error id match" time="0.031" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="returns false if the actual error id is not the same as the expected error id when the actual message and expected message match" name="PesterThrowFailureMessage.returns false if the actual error id is not the same as the expected error id when the actual message and expected message match" time="0.0293" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="NotPesterThrowFailureMessage" executed="True" result="Success" success="False" time="0.2339" asserts="0" description="NotPesterThrowFailureMessage">
+        <results>
+          <test-case description="returns false if the actual message is not the same as the expected message" name="NotPesterThrowFailureMessage.returns false if the actual message is not the same as the expected message" time="0.1456" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="returns true if the actual message is the same as the expected message" name="NotPesterThrowFailureMessage.returns true if the actual message is the same as the expected message" time="0.0281" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="returns false if the actual error id is the same as the expected error id" name="NotPesterThrowFailureMessage.returns false if the actual error id is the same as the expected error id" time="0.032" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="returns false if the actual message or actual error id is the same as the expected message or expected error id" name="NotPesterThrowFailureMessage.returns false if the actual message or actual error id is the same as the expected message or expected error id" time="0.0283" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+  <test-suite type="TestFixture" name="C:\Users\Dave\Documents\GitHub\pester\Functions\Assertions\Should.Tests.ps1" executed="True" result="Success" success="False" time="2.2519" asserts="0" description="C:\Users\Dave\Documents\GitHub\pester\Functions\Assertions\Should.Tests.ps1">
+    <results>
+      <test-suite type="TestFixture" name="Parse-ShouldArgs" executed="True" result="Success" success="False" time="0.5449" asserts="0" description="Parse-ShouldArgs">
+        <results>
+          <test-suite type="TestFixture" name="for positive assertions" executed="True" result="Success" success="False" time="0.1399" asserts="0" description="for positive assertions">
+            <results>
+              <test-case description="gets the expected value from the 2nd argument" name="Parse-ShouldArgs.for positive assertions.gets the expected value from the 2nd argument" time="0.1253" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="marks the args as a positive assertion" name="Parse-ShouldArgs.for positive assertions.marks the args as a positive assertion" time="0.0146" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="for negative assertions" executed="True" result="Success" success="False" time="0.2285" asserts="0" description="for negative assertions">
+            <results>
+              <test-case description="gets the expected value from the third argument" name="Parse-ShouldArgs.for negative assertions.gets the expected value from the third argument" time="0.2165" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="marks the args as a negative assertion" name="Parse-ShouldArgs.for negative assertions.marks the args as a negative assertion" time="0.012" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-case description="identifies assertion functions" name="Parse-ShouldArgs.identifies assertion functions" time="0.1567" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="works with strict mode when using 'switch' style tests" name="Parse-ShouldArgs.works with strict mode when using 'switch' style tests" time="0.0197" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Should" executed="True" result="Success" success="False" time="1.707" asserts="0" description="Should">
+        <results>
+          <test-case description="can use the Be assertion" name="Should.can use the Be assertion" time="0.2315" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="can use the Not Be assertion" name="Should.can use the Not Be assertion" time="0.0194" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="can use the BeNullOrEmpty assertion" name="Should.can use the BeNullOrEmpty assertion" time="0.0162" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="can use the Not BeNullOrEmpty assertion" name="Should.can use the Not BeNullOrEmpty assertion" time="0.0272" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="can handle exception thrown assertions" name="Should.can handle exception thrown assertions" time="1.129" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="can handle exception should not be thrown assertions" name="Should.can handle exception should not be thrown assertions" time="0.0287" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="can handle Exist assertion" name="Should.can handle Exist assertion" time="0.0128" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="can handle the Match assertion" name="Should.can handle the Match assertion" time="0.0159" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="can test for file contents" name="Should.can test for file contents" time="0.1357" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="ensures all assertion functions provide failure messages" name="Should.ensures all assertion functions provide failure messages" time="0.0468" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="can process functions with empty output as input" name="Should.can process functions with empty output as input" time="0.0437" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+  <test-suite type="TestFixture" name="C:\Users\Dave\Documents\GitHub\pester\Functions\BreakAndContinue.Tests.ps1" executed="True" result="Success" success="False" time="0.565" asserts="0" description="C:\Users\Dave\Documents\GitHub\pester\Functions\BreakAndContinue.Tests.ps1">
+    <results>
+      <test-suite type="TestFixture" name="Clean handling of break and continue" executed="True" result="Success" success="False" time="0.565" asserts="0" description="Clean handling of break and continue">
+        <results>
+          <test-suite type="TestFixture" name="Break" executed="True" result="Success" success="False" time="0" asserts="0" description="Break">
+            <results />
+          </test-suite>
+          <test-suite type="TestFixture" name="Continue" executed="True" result="Success" success="False" time="0" asserts="0" description="Continue">
+            <results />
+          </test-suite>
+          <test-case description="Did not abort the whole test run" name="Clean handling of break and continue.Did not abort the whole test run" time="0.565" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+  <test-suite type="TestFixture" name="C:\Users\Dave\Documents\GitHub\pester\Functions\Context.Tests.ps1" executed="True" result="Success" success="False" time="1.5076" asserts="0" description="C:\Users\Dave\Documents\GitHub\pester\Functions\Context.Tests.ps1">
+    <results>
+      <test-suite type="TestFixture" name="Testing Context" executed="True" result="Success" success="False" time="0.2049" asserts="0" description="Testing Context">
+        <results>
+          <test-case description="Has a non-mandatory fixture parameter which throws the proper error message if missing" name="Testing Context.Has a non-mandatory fixture parameter which throws the proper error message if missing" time="0.2049" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Context - Implementation" executed="True" result="Success" success="False" time="1.3027" asserts="0" description="Context - Implementation">
+        <results>
+          <test-suite type="TestFixture" name="Handling errors in the Fixture" executed="True" result="Success" success="False" time="0.5384" asserts="0" description="Handling errors in the Fixture">
+            <results>
+              <test-case description="Does not rethrow terminating exceptions from the Fixture block" name="Context - Implementation.Handling errors in the Fixture.Does not rethrow terminating exceptions from the Fixture block" time="0.4918" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Adds a failed test result when errors occur in the Context block" name="Context - Implementation.Handling errors in the Fixture.Adds a failed test result when errors occur in the Context block" time="0.0219" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Does not attempt to run the rest of the Context block after the error occurs" name="Context - Implementation.Handling errors in the Fixture.Does not attempt to run the rest of the Context block after the error occurs" time="0.0247" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="Calls to the output blocks" executed="True" result="Success" success="False" time="0.7643" asserts="0" description="Calls to the output blocks">
+            <results>
+              <test-case description="Calls the Context output block once, and does not call the test output block when no errors occur" name="Context - Implementation.Calls to the output blocks.Calls the Context output block once, and does not call the test output block when no errors occur" time="0.4948" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Calls the Context output block once, and the test output block once if an error occurs." name="Context - Implementation.Calls to the output blocks.Calls the Context output block once, and the test output block once if an error occurs." time="0.2695" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+  <test-suite type="TestFixture" name="C:\Users\Dave\Documents\GitHub\pester\Functions\Coverage.Tests.ps1" executed="True" result="Success" success="False" time="4.1592" asserts="0" description="C:\Users\Dave\Documents\GitHub\pester\Functions\Coverage.Tests.ps1">
+    <results>
+      <test-suite type="TestFixture" name="Code Coverage Analysis" executed="True" result="Success" success="False" time="2.2899" asserts="0" description="Code Coverage Analysis">
+        <results>
+          <test-suite type="TestFixture" name="Entire file" executed="True" result="Success" success="False" time="0.8311" asserts="0" description="Entire file">
+            <results>
+              <test-case description="Has the proper number of breakpoints defined" name="Code Coverage Analysis.Entire file.Has the proper number of breakpoints defined" time="0.6814" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Reports the proper number of executed commands" name="Code Coverage Analysis.Entire file.Reports the proper number of executed commands" time="0.0449" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Reports the proper number of analyzed commands" name="Code Coverage Analysis.Entire file.Reports the proper number of analyzed commands" time="0.0258" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Reports the proper number of analyzed files" name="Code Coverage Analysis.Entire file.Reports the proper number of analyzed files" time="0.015" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Reports the proper number of missed commands" name="Code Coverage Analysis.Entire file.Reports the proper number of missed commands" time="0.0168" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Reports the correct missed command" name="Code Coverage Analysis.Entire file.Reports the correct missed command" time="0.0158" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Reports the proper number of hit commands" name="Code Coverage Analysis.Entire file.Reports the proper number of hit commands" time="0.0171" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Reports the correct hit command" name="Code Coverage Analysis.Entire file.Reports the correct hit command" time="0.0142" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="Single function with missed commands" executed="True" result="Success" success="False" time="0.3654" asserts="0" description="Single function with missed commands">
+            <results>
+              <test-case description="Has the proper number of breakpoints defined" name="Code Coverage Analysis.Single function with missed commands.Has the proper number of breakpoints defined" time="0.2808" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Reports the proper number of executed commands" name="Code Coverage Analysis.Single function with missed commands.Reports the proper number of executed commands" time="0.0331" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Reports the proper number of analyzed commands" name="Code Coverage Analysis.Single function with missed commands.Reports the proper number of analyzed commands" time="0.0125" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Reports the proper number of missed commands" name="Code Coverage Analysis.Single function with missed commands.Reports the proper number of missed commands" time="0.0117" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Reports the correct missed command" name="Code Coverage Analysis.Single function with missed commands.Reports the correct missed command" time="0.0113" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Reports the proper number of hit commands" name="Code Coverage Analysis.Single function with missed commands.Reports the proper number of hit commands" time="0.0161" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="Single function with no missed commands" executed="True" result="Success" success="False" time="0.386" asserts="0" description="Single function with no missed commands">
+            <results>
+              <test-case description="Has the proper number of breakpoints defined" name="Code Coverage Analysis.Single function with no missed commands.Has the proper number of breakpoints defined" time="0.2634" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Reports the proper number of executed commands" name="Code Coverage Analysis.Single function with no missed commands.Reports the proper number of executed commands" time="0.016" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Reports the proper number of analyzed commands" name="Code Coverage Analysis.Single function with no missed commands.Reports the proper number of analyzed commands" time="0.024" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Reports the proper number of missed commands" name="Code Coverage Analysis.Single function with no missed commands.Reports the proper number of missed commands" time="0.0348" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Reports the proper number of hit commands" name="Code Coverage Analysis.Single function with no missed commands.Reports the proper number of hit commands" time="0.0227" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Reports the correct hit command" name="Code Coverage Analysis.Single function with no missed commands.Reports the correct hit command" time="0.0251" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="Range of lines" executed="True" result="Success" success="False" time="0.3396" asserts="0" description="Range of lines">
+            <results>
+              <test-case description="Has the proper number of breakpoints defined" name="Code Coverage Analysis.Range of lines.Has the proper number of breakpoints defined" time="0.263" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Reports the proper number of executed commands" name="Code Coverage Analysis.Range of lines.Reports the proper number of executed commands" time="0.0222" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Reports the proper number of analyzed commands" name="Code Coverage Analysis.Range of lines.Reports the proper number of analyzed commands" time="0.017" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Reports the proper number of missed commands" name="Code Coverage Analysis.Range of lines.Reports the proper number of missed commands" time="0.0109" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Reports the proper number of hit commands" name="Code Coverage Analysis.Range of lines.Reports the proper number of hit commands" time="0.0129" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Reports the correct hit command" name="Code Coverage Analysis.Range of lines.Reports the correct hit command" time="0.0136" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="Wildcard resolution" executed="True" result="Success" success="False" time="0.3678" asserts="0" description="Wildcard resolution">
+            <results>
+              <test-case description="Has the proper number of breakpoints defined" name="Code Coverage Analysis.Wildcard resolution.Has the proper number of breakpoints defined" time="0.245" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Reports the proper number of executed commands" name="Code Coverage Analysis.Wildcard resolution.Reports the proper number of executed commands" time="0.0146" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Reports the proper number of analyzed commands" name="Code Coverage Analysis.Wildcard resolution.Reports the proper number of analyzed commands" time="0.0191" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Reports the proper number of analyzed files" name="Code Coverage Analysis.Wildcard resolution.Reports the proper number of analyzed files" time="0.0103" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Reports the proper number of missed commands" name="Code Coverage Analysis.Wildcard resolution.Reports the proper number of missed commands" time="0.0098" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Reports the correct missed command" name="Code Coverage Analysis.Wildcard resolution.Reports the correct missed command" time="0.0144" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Reports the proper number of hit commands" name="Code Coverage Analysis.Wildcard resolution.Reports the proper number of hit commands" time="0.0305" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Reports the correct hit command" name="Code Coverage Analysis.Wildcard resolution.Reports the correct hit command" time="0.024" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Stripping common parent paths" executed="True" result="Success" success="False" time="0.4859" asserts="0" description="Stripping common parent paths">
+        <results>
+          <test-case description="Identifies the correct parent path" name="Stripping common parent paths.Identifies the correct parent path" time="0.4724" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Strips the common path correctly" name="Stripping common parent paths.Strips the common path correctly" time="0.0135" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Analyzing coverage of a DSC configuration" executed="True" result="Success" success="False" time="1.3835" asserts="0" description="Analyzing coverage of a DSC configuration">
+        <results>
+          <test-case description="Has the proper number of breakpoints defined" name="Analyzing coverage of a DSC configuration.Has the proper number of breakpoints defined" time="0.5102" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Reports the proper number of missed commands before running the configuration" name="Analyzing coverage of a DSC configuration.Reports the proper number of missed commands before running the configuration" time="0.0405" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Reports the proper number of missed commands after running the configuration" name="Analyzing coverage of a DSC configuration.Reports the proper number of missed commands after running the configuration" time="0.8328" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+  <test-suite type="TestFixture" name="C:\Users\Dave\Documents\GitHub\pester\Functions\Describe.Tests.ps1" executed="True" result="Success" success="False" time="4.0642" asserts="0" description="C:\Users\Dave\Documents\GitHub\pester\Functions\Describe.Tests.ps1">
+    <results>
+      <test-suite type="TestFixture" name="Testing Describe" executed="True" result="Success" success="False" time="0.2555" asserts="0" description="Testing Describe">
+        <results>
+          <test-case description="Has a non-mandatory fixture parameter which throws the proper error message if missing" name="Testing Describe.Has a non-mandatory fixture parameter which throws the proper error message if missing" time="0.2555" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Describe - Implementation" executed="True" result="Success" success="False" time="3.8087" asserts="0" description="Describe - Implementation">
+        <results>
+          <test-suite type="TestFixture" name="Handling errors in the Fixture" executed="True" result="Success" success="False" time="0.6107" asserts="0" description="Handling errors in the Fixture">
+            <results>
+              <test-case description="Does not rethrow terminating exceptions from the Fixture block" name="Describe - Implementation.Handling errors in the Fixture.Does not rethrow terminating exceptions from the Fixture block" time="0.573" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Adds a failed test result when errors occur in the Describe block" name="Describe - Implementation.Handling errors in the Fixture.Adds a failed test result when errors occur in the Describe block" time="0.024" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Does not attempt to run the rest of the Describe block after the error occurs" name="Describe - Implementation.Handling errors in the Fixture.Does not attempt to run the rest of the Describe block after the error occurs" time="0.0137" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="Calls to the output blocks" executed="True" result="Success" success="False" time="0.7352" asserts="0" description="Calls to the output blocks">
+            <results>
+              <test-case description="Calls the Describe output block once, and does not call the test output block when no errors occur" name="Describe - Implementation.Calls to the output blocks.Calls the Describe output block once, and does not call the test output block when no errors occur" time="0.4837" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Calls the Describe output block once, and the test output block once if an error occurs." name="Describe - Implementation.Calls to the output blocks.Calls the Describe output block once, and the test output block once if an error occurs." time="0.2515" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="Test Name Filter" executed="True" result="Success" success="False" time="0.9943" asserts="0" description="Test Name Filter">
+            <results>
+              <test-suite type="ParameterizedTest" name="Calls the test block when the test name &lt;Description&gt;" executed="True" result="Success" success="False" time="0.9702" asserts="0" description="Calls the test block when the test name &lt;Description&gt;">
+                <results>
+                  <test-case description="Calls the test block when the test name matches a wildcard" name="Describe - Implementation.Test Name Filter.Calls the test block when the test name matches a wildcard" time="0.4947" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Calls the test block when the test name matches exactly" name="Describe - Implementation.Test Name Filter.Calls the test block when the test name matches exactly" time="0.2348" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Calls the test block when the test name matches ignoring case" name="Describe - Implementation.Test Name Filter.Calls the test block when the test name matches ignoring case" time="0.2407" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-case description="Does not call the test block when the test name doesn't match a filter" name="Describe - Implementation.Test Name Filter.Does not call the test block when the test name doesn't match a filter" time="0.0241" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="Tags Filter" executed="True" result="Success" success="False" time="1.4684" asserts="0" description="Tags Filter">
+            <results>
+              <test-suite type="ParameterizedTest" name="Calls the test block when the tag filter &lt;Description&gt;" executed="True" result="Success" success="False" time="1.4505" asserts="0" description="Calls the test block when the tag filter &lt;Description&gt;">
+                <results>
+                  <test-case description="Calls the test block when the tag filter matches the first tag exactly" name="Describe - Implementation.Tags Filter.Calls the test block when the tag filter matches the first tag exactly" time="0.5055" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Calls the test block when the tag filter matches the second tag exactly" name="Describe - Implementation.Tags Filter.Calls the test block when the tag filter matches the second tag exactly" time="0.2273" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Calls the test block when the tag filter matches both tags exactly" name="Describe - Implementation.Tags Filter.Calls the test block when the tag filter matches both tags exactly" time="0.2328" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Calls the test block when the tag filter matches the first tag ignoring case" name="Describe - Implementation.Tags Filter.Calls the test block when the tag filter matches the first tag ignoring case" time="0.2433" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Calls the test block when the tag filter matches the second tag ignoring case" name="Describe - Implementation.Tags Filter.Calls the test block when the tag filter matches the second tag ignoring case" time="0.2415" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-case description="Does not call the test block when the test tags don't match the pester state's tags." name="Describe - Implementation.Tags Filter.Does not call the test block when the test tags don't match the pester state's tags." time="0.018" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+  <test-suite type="TestFixture" name="C:\Users\Dave\Documents\GitHub\pester\Functions\Gherkin.Tests.ps1" executed="True" result="Success" success="False" time="7.0204" asserts="0" description="C:\Users\Dave\Documents\GitHub\pester\Functions\Gherkin.Tests.ps1">
+    <results>
+      <test-suite type="TestFixture" name="Invoke-Gerkin" executed="True" result="Success" success="False" time="7.0204" asserts="0" description="Invoke-Gerkin">
+        <results>
+          <test-case description="Works on the Validator example" name="Invoke-Gerkin.Works on the Validator example" time="6.9478" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Supports testing only scenarios with certain tags" name="Invoke-Gerkin.Supports testing only scenarios with certain tags" time="0.0138" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Supports tagging examples" name="Invoke-Gerkin.Supports tagging examples" time="0.0282" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Supports excluding scenarios by tag" name="Invoke-Gerkin.Supports excluding scenarios by tag" time="0.0177" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Supports running specific scenarios by name" name="Invoke-Gerkin.Supports running specific scenarios by name" time="0.0129" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+  <test-suite type="TestFixture" name="C:\Users\Dave\Documents\GitHub\pester\Functions\GherkinHook.Tests.ps1" executed="True" result="Success" success="False" time="0.2654" asserts="0" description="C:\Users\Dave\Documents\GitHub\pester\Functions\GherkinHook.Tests.ps1">
+    <results>
+      <test-suite type="TestFixture" name="Testing Gerkin Hook" executed="True" result="Success" success="False" time="0.2654" asserts="0" description="Testing Gerkin Hook">
+        <results>
+          <test-case description="Generates a function named &quot;Hook&quot; with mandatory Tags and Script parameters" name="Testing Gerkin Hook.Generates a function named &quot;Hook&quot; with mandatory Tags and Script parameters" time="0.2" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Generates aliases BeforeAllFeatures, BeforeFeature, BeforeScenario, BeforeStep, AfterAllFeatures, AfterFeature, AfterScenario, AfterStep" name="Testing Gerkin Hook.Generates aliases BeforeAllFeatures, BeforeFeature, BeforeScenario, BeforeStep, AfterAllFeatures, AfterFeature, AfterScenario, AfterStep" time="0.0237" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Populates the GherkinHooks module variable" name="Testing Gerkin Hook.Populates the GherkinHooks module variable" time="0.0418" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+  <test-suite type="TestFixture" name="C:\Users\Dave\Documents\GitHub\pester\Functions\GherkinStep.Tests.ps1" executed="True" result="Success" success="False" time="0.235" asserts="0" description="C:\Users\Dave\Documents\GitHub\pester\Functions\GherkinStep.Tests.ps1">
+    <results>
+      <test-suite type="TestFixture" name="Testing Gerkin Step" executed="True" result="Success" success="False" time="0.235" asserts="0" description="Testing Gerkin Step">
+        <results>
+          <test-case description="Generates a function named &quot;When&quot; with mandatory name and test parameters" name="Testing Gerkin Step.Generates a function named &quot;When&quot; with mandatory name and test parameters" time="0.1935" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Generates aliases And, But, Given, Then for When" name="Testing Gerkin Step.Generates aliases And, But, Given, Then for When" time="0.0164" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Populates the GherkinSteps module variable" name="Testing Gerkin Step.Populates the GherkinSteps module variable" time="0.0252" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+  <test-suite type="TestFixture" name="C:\Users\Dave\Documents\GitHub\pester\Functions\GlobalMock-A.Tests.ps1" executed="True" result="Success" success="False" time="0.1713" asserts="0" description="C:\Users\Dave\Documents\GitHub\pester\Functions\GlobalMock-A.Tests.ps1">
+    <results>
+      <test-suite type="TestFixture" name="Mocking Global Functions - Part One" executed="True" result="Success" success="False" time="0.1713" asserts="0" description="Mocking Global Functions - Part One">
+        <results>
+          <test-case description="Mocks the global function" name="Mocking Global Functions - Part One.Mocks the global function" time="0.1713" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+  <test-suite type="TestFixture" name="C:\Users\Dave\Documents\GitHub\pester\Functions\GlobalMock-B.Tests.ps1" executed="True" result="Success" success="False" time="0.142" asserts="0" description="C:\Users\Dave\Documents\GitHub\pester\Functions\GlobalMock-B.Tests.ps1">
+    <results>
+      <test-suite type="TestFixture" name="Mocking Global Functions - Part Two" executed="True" result="Success" success="False" time="0.142" asserts="0" description="Mocking Global Functions - Part Two">
+        <results>
+          <test-case description="Restored the global function properly" name="Mocking Global Functions - Part Two.Restored the global function properly" time="0.142" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+  <test-suite type="TestFixture" name="C:\Users\Dave\Documents\GitHub\pester\Functions\In.Tests.ps1" executed="True" result="Success" success="False" time="0.3102" asserts="0" description="C:\Users\Dave\Documents\GitHub\pester\Functions\In.Tests.ps1">
+    <results>
+      <test-suite type="TestFixture" name="the In statement" executed="True" result="Success" success="False" time="0.3102" asserts="0" description="the In statement">
+        <results>
+          <test-case description="executes a command in that directory" name="the In statement.executes a command in that directory" time="0.2821" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="updates the $pwd variable when executed" name="the In statement.updates the $pwd variable when executed" time="0.0282" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+  <test-suite type="TestFixture" name="C:\Users\Dave\Documents\GitHub\pester\Functions\InModuleScope.Tests.ps1" executed="True" result="Success" success="False" time="1.1282" asserts="0" description="C:\Users\Dave\Documents\GitHub\pester\Functions\InModuleScope.Tests.ps1">
+    <results>
+      <test-suite type="TestFixture" name="Module scope separation" executed="True" result="Success" success="False" time="0.3673" asserts="0" description="Module scope separation">
+        <results>
+          <test-suite type="TestFixture" name="When users define variables with the same name as Pester parameters" executed="True" result="Success" success="False" time="0.2503" asserts="0" description="When users define variables with the same name as Pester parameters">
+            <results>
+              <test-case description="does not hide user variables" name="Module scope separation.When users define variables with the same name as Pester parameters.does not hide user variables" time="0.2503" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-case description="Does not expose Pester implementation details to the SUT" name="Module scope separation.Does not expose Pester implementation details to the SUT" time="0.117" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Executing test code inside a module" executed="True" result="Success" success="False" time="0.761" asserts="0" description="Executing test code inside a module">
+        <results>
+          <test-case description="Cannot call module internal functions, by default" name="Executing test code inside a module.Cannot call module internal functions, by default" time="0.7002" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Can call module internal functions using InModuleScope" name="Executing test code inside a module.Can call module internal functions using InModuleScope" time="0.0203" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Can mock functions inside the module without using Mock -ModuleName" name="Executing test code inside a module.Can mock functions inside the module without using Mock -ModuleName" time="0.0405" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+  <test-suite type="TestFixture" name="C:\Users\Dave\Documents\GitHub\pester\Functions\It.Tests.ps1" executed="True" result="Success" success="False" time="1.6551" asserts="0" description="C:\Users\Dave\Documents\GitHub\pester\Functions\It.Tests.ps1">
+    <results>
+      <test-suite type="TestFixture" name="Get-PesterResult" executed="True" result="Success" success="False" time="0" asserts="0" description="Get-PesterResult">
+        <results />
+      </test-suite>
+      <test-suite type="TestFixture" name="It - Implementation" executed="True" result="Success" success="False" time="0.6855" asserts="0" description="It - Implementation">
+        <results>
+          <test-suite type="TestFixture" name="Parameterized Tests" executed="True" result="Success" success="False" time="0.2267" asserts="0" description="Parameterized Tests">
+            <results>
+              <test-case description="Creates test result records with the ParameterizedSuiteName property set" name="It - Implementation.Parameterized Tests.Creates test result records with the ParameterizedSuiteName property set" time="0.188" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Expands parameters in parameterized test suite names" name="It - Implementation.Parameterized Tests.Expands parameters in parameterized test suite names" time="0.0194" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Logs the proper successes and failures" name="It - Implementation.Parameterized Tests.Logs the proper successes and failures" time="0.0193" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-case description="Throws an error if you fail to pass in a test block" name="It - Implementation.Throws an error if you fail to pass in a test block" time="0.2842" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does not throw an error if It is passed a script block, and adds a successful test result." name="It - Implementation.Does not throw an error if It is passed a script block, and adds a successful test result." time="0.0279" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does not throw an error if the -Pending switch is used, and no script block is passed" name="It - Implementation.Does not throw an error if the -Pending switch is used, and no script block is passed" time="0.0199" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does not throw an error if the -Skip switch is used, and no script block is passed" name="It - Implementation.Does not throw an error if the -Skip switch is used, and no script block is passed" time="0.017" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does not throw an error if the -Ignore switch is used, and no script block is passed" name="It - Implementation.Does not throw an error if the -Ignore switch is used, and no script block is passed" time="0.0255" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Creates a pending test for an empty (whitespace and comments only) script block" name="It - Implementation.Creates a pending test for an empty (whitespace and comments only) script block" time="0.0187" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Adds a failed test if the script block throws an exception" name="It - Implementation.Adds a failed test if the script block throws an exception" time="0.0428" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Calls the output script block for each test" name="It - Implementation.Calls the output script block for each test" time="0.0227" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Get-OrderedParameterDictionary" executed="True" result="Success" success="False" time="0.2484" asserts="0" description="Get-OrderedParameterDictionary">
+        <results>
+          <test-case description="Reports keys and values in the same order as the param block" name="Get-OrderedParameterDictionary.Reports keys and values in the same order as the param block" time="0.2484" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Remove-Comments" executed="True" result="Success" success="False" time="0.1458" asserts="0" description="Remove-Comments">
+        <results>
+          <test-case description="Removes single line comments" name="Remove-Comments.Removes single line comments" time="0.1335" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Removes multi line comments" name="Remove-Comments.Removes multi line comments" time="0.0123" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Get-PesterResult" executed="True" result="Success" success="False" time="0.5755" asserts="0" description="Get-PesterResult">
+        <results>
+          <test-suite type="TestFixture" name="failed tests in Tests file" executed="True" result="Success" success="False" time="0.2794" asserts="0" description="failed tests in Tests file">
+            <results>
+              <test-case description="records the correct stack line number" name="Get-PesterResult.failed tests in Tests file.records the correct stack line number" time="0.2628" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="records the correct error record" name="Get-PesterResult.failed tests in Tests file.records the correct error record" time="0.0166" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="failed tests in another file" executed="True" result="Success" success="False" time="0.1574" asserts="0" description="failed tests in another file">
+            <results>
+              <test-case description="records the correct stack line number" name="Get-PesterResult.failed tests in another file.records the correct stack line number" time="0.1446" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="records the correct error record" name="Get-PesterResult.failed tests in another file.records the correct error record" time="0.0129" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-case description="Does not modify the error message from the original exception" name="Get-PesterResult.Does not modify the error message from the original exception" time="0.1387" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+  <test-suite type="TestFixture" name="C:\Users\Dave\Documents\GitHub\pester\Functions\Mock.Tests.ps1" executed="True" result="Success" success="False" time="18.2048" asserts="0" description="C:\Users\Dave\Documents\GitHub\pester\Functions\Mock.Tests.ps1">
+    <results>
+      <test-suite type="TestFixture" name="When calling Mock on existing function" executed="True" result="Success" success="False" time="0.2963" asserts="0" description="When calling Mock on existing function">
+        <results>
+          <test-case description="Should rename function under test" name="When calling Mock on existing function.Should rename function under test" time="0.2834" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Should Invoke the mocked script" name="When calling Mock on existing function.Should Invoke the mocked script" time="0.0129" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="When the caller mocks a command Pester uses internally" executed="True" result="Success" success="False" time="0.3271" asserts="0" description="When the caller mocks a command Pester uses internally">
+        <results>
+          <test-suite type="TestFixture" name="Context run when Write-Host is mocked" executed="True" result="Success" success="False" time="0.3271" asserts="0" description="Context run when Write-Host is mocked">
+            <results>
+              <test-case description="does not make extra calls to the mocked command" name="When the caller mocks a command Pester uses internally.Context run when Write-Host is mocked.does not make extra calls to the mocked command" time="0.3108" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="retains the correct mock count after the first test completes" name="When the caller mocks a command Pester uses internally.Context run when Write-Host is mocked.retains the correct mock count after the first test completes" time="0.0163" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="When calling Mock on existing cmdlet" executed="True" result="Success" success="False" time="0.3086" asserts="0" description="When calling Mock on existing cmdlet">
+        <results>
+          <test-case description="Should Invoke the mocked script" name="When calling Mock on existing cmdlet.Should Invoke the mocked script" time="0.2792" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Should not resolve $args to the parent scope" name="When calling Mock on existing cmdlet.Should not resolve $args to the parent scope" time="0.0294" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="When calling Mock on an alias" executed="True" result="Success" success="False" time="0.2357" asserts="0" description="When calling Mock on an alias">
+        <results>
+          <test-case description="Should Invoke the mocked script" name="When calling Mock on an alias.Should Invoke the mocked script" time="0.2357" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="When calling Mock on an alias that refers to a function Pester can't see" executed="True" result="Success" success="False" time="0.1843" asserts="0" description="When calling Mock on an alias that refers to a function Pester can't see">
+        <results>
+          <test-case description="Mocks the aliased command successfully" name="When calling Mock on an alias that refers to a function Pester can't see.Mocks the aliased command successfully" time="0.1843" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="When calling Mock on a filter" executed="True" result="Success" success="False" time="0.1854" asserts="0" description="When calling Mock on a filter">
+        <results>
+          <test-case description="Should Invoke the mocked script" name="When calling Mock on a filter.Should Invoke the mocked script" time="0.1854" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="When calling Mock on an external script" executed="True" result="Success" success="False" time="0.2198" asserts="0" description="When calling Mock on an external script">
+        <results>
+          <test-case description="Should Invoke the mocked script using just the script name" name="When calling Mock on an external script.Should Invoke the mocked script using just the script name" time="0.1817" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Should Invoke the mocked script using the command-invocation operator" name="When calling Mock on an external script.Should Invoke the mocked script using the command-invocation operator" time="0.0179" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Should Invoke the mocked script using dot source notation" name="When calling Mock on an external script.Should Invoke the mocked script using dot source notation" time="0.0202" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="When calling Mock on an application command" executed="True" result="Success" success="False" time="0.1778" asserts="0" description="When calling Mock on an application command">
+        <results>
+          <test-case description="Should Invoke the mocked script" name="When calling Mock on an application command.Should Invoke the mocked script" time="0.1778" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="When calling Mock in the Describe block" executed="True" result="Success" success="False" time="0.1865" asserts="0" description="When calling Mock in the Describe block">
+        <results>
+          <test-case description="Should mock Out-File successfully" name="When calling Mock in the Describe block.Should mock Out-File successfully" time="0.1865" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="When calling Mock on existing cmdlet to handle pipelined input" executed="True" result="Success" success="False" time="0.1636" asserts="0" description="When calling Mock on existing cmdlet to handle pipelined input">
+        <results>
+          <test-case description="Should process the pipeline in the mocked script" name="When calling Mock on existing cmdlet to handle pipelined input.Should process the pipeline in the mocked script" time="0.1636" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="When calling Mock on existing cmdlet with Common params" executed="True" result="Success" success="False" time="0.255" asserts="0" description="When calling Mock on existing cmdlet with Common params">
+        <results>
+          <test-case description="Should strip verbose" name="When calling Mock on existing cmdlet with Common params.Should strip verbose" time="0.1404" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Should strip Debug" name="When calling Mock on existing cmdlet with Common params.Should strip Debug" time="0.0142" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Should strip ErrorAction" name="When calling Mock on existing cmdlet with Common params.Should strip ErrorAction" time="0.0115" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Should strip WarningAction" name="When calling Mock on existing cmdlet with Common params.Should strip WarningAction" time="0.0141" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Should strip ErrorVariable" name="When calling Mock on existing cmdlet with Common params.Should strip ErrorVariable" time="0.0158" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Should strip WarningVariable" name="When calling Mock on existing cmdlet with Common params.Should strip WarningVariable" time="0.0134" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Should strip OutVariable" name="When calling Mock on existing cmdlet with Common params.Should strip OutVariable" time="0.0144" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Should strip OutBuffer" name="When calling Mock on existing cmdlet with Common params.Should strip OutBuffer" time="0.0136" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Should not strip an Uncommon param" name="When calling Mock on existing cmdlet with Common params.Should not strip an Uncommon param" time="0.0175" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="When calling Mock on non-existing function" executed="True" result="Success" success="False" time="0.6828" asserts="0" description="When calling Mock on non-existing function">
+        <results>
+          <test-case description="Should throw correct error" name="When calling Mock on non-existing function.Should throw correct error" time="0.6828" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="When calling Mock, StrictMode is enabled, and variables are used in the ParameterFilter" executed="True" result="Success" success="False" time="0.1811" asserts="0" description="When calling Mock, StrictMode is enabled, and variables are used in the ParameterFilter">
+        <results>
+          <test-case description="Does not throw an error when testing the parameter filter" name="When calling Mock, StrictMode is enabled, and variables are used in the ParameterFilter.Does not throw an error when testing the parameter filter" time="0.139" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Calls the mock properly" name="When calling Mock, StrictMode is enabled, and variables are used in the ParameterFilter.Calls the mock properly" time="0.0239" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Properly asserts the mock was called when there is a variable in the parameter filter" name="When calling Mock, StrictMode is enabled, and variables are used in the ParameterFilter.Properly asserts the mock was called when there is a variable in the parameter filter" time="0.0182" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="When calling Mock on existing function without matching bound params" executed="True" result="Success" success="False" time="0.1729" asserts="0" description="When calling Mock on existing function without matching bound params">
+        <results>
+          <test-case description="Should redirect to real function" name="When calling Mock on existing function without matching bound params.Should redirect to real function" time="0.1729" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="When calling Mock on existing function with matching bound params" executed="True" result="Success" success="False" time="0.1634" asserts="0" description="When calling Mock on existing function with matching bound params">
+        <results>
+          <test-case description="Should return mocked result" name="When calling Mock on existing function with matching bound params.Should return mocked result" time="0.1634" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="When calling Mock on existing function without matching unbound arguments" executed="True" result="Success" success="False" time="0.1582" asserts="0" description="When calling Mock on existing function without matching unbound arguments">
+        <results>
+          <test-case description="Should redirect to real function" name="When calling Mock on existing function without matching unbound arguments.Should redirect to real function" time="0.1582" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="When calling Mock on existing function with matching unbound arguments" executed="True" result="Success" success="False" time="0.1522" asserts="0" description="When calling Mock on existing function with matching unbound arguments">
+        <results>
+          <test-case description="Should return mocked result" name="When calling Mock on existing function with matching unbound arguments.Should return mocked result" time="0.1522" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="When calling Mock on a function that has no parameters" executed="True" result="Success" success="False" time="0.1904" asserts="0" description="When calling Mock on a function that has no parameters">
+        <results>
+          <test-case description="Sends the $args variable properly with 2+ elements" name="When calling Mock on a function that has no parameters.Sends the $args variable properly with 2+ elements" time="0.1547" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Sends the $args variable properly with 1 element" name="When calling Mock on a function that has no parameters.Sends the $args variable properly with 1 element" time="0.0172" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Sends the $args variable properly with 0 elements" name="When calling Mock on a function that has no parameters.Sends the $args variable properly with 0 elements" time="0.0185" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="When calling Mock on cmdlet Used by Mock" executed="True" result="Success" success="False" time="0.2138" asserts="0" description="When calling Mock on cmdlet Used by Mock">
+        <results>
+          <test-case description="Should Invoke the mocked script" name="When calling Mock on cmdlet Used by Mock.Should Invoke the mocked script" time="0.2138" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="When calling Mock on More than one command" executed="True" result="Success" success="False" time="0.2114" asserts="0" description="When calling Mock on More than one command">
+        <results>
+          <test-case description="Should Invoke the mocked script for the first Mock" name="When calling Mock on More than one command.Should Invoke the mocked script for the first Mock" time="0.1957" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Should Invoke the mocked script for the second Mock" name="When calling Mock on More than one command.Should Invoke the mocked script for the second Mock" time="0.0157" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="When calling Mock on a module-internal function." executed="True" result="Success" success="False" time="0.5708" asserts="0" description="When calling Mock on a module-internal function.">
+        <results>
+          <test-suite type="TestFixture" name="Using Mock -ModuleName &quot;ModuleName&quot; &quot;CommandName&quot; syntax" executed="True" result="Success" success="False" time="0.3735" asserts="0" description="Using Mock -ModuleName &quot;ModuleName&quot; &quot;CommandName&quot; syntax">
+            <results>
+              <test-case description="Should call the mocked function" name="When calling Mock on a module-internal function..Using Mock -ModuleName &quot;ModuleName&quot; &quot;CommandName&quot; syntax.Should call the mocked function" time="0.1428" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Should mock calls to external functions from inside the module" name="When calling Mock on a module-internal function..Using Mock -ModuleName &quot;ModuleName&quot; &quot;CommandName&quot; syntax.Should mock calls to external functions from inside the module" time="0.0534" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Should only call mocks within the same module" name="When calling Mock on a module-internal function..Using Mock -ModuleName &quot;ModuleName&quot; &quot;CommandName&quot; syntax.Should only call mocks within the same module" time="0.0387" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Should call mocks from inside another mock" name="When calling Mock on a module-internal function..Using Mock -ModuleName &quot;ModuleName&quot; &quot;CommandName&quot; syntax.Should call mocks from inside another mock" time="0.0421" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Should work even if the function is weird and steps on the automatic $ExecutionContext variable." name="When calling Mock on a module-internal function..Using Mock -ModuleName &quot;ModuleName&quot; &quot;CommandName&quot; syntax.Should work even if the function is weird and steps on the automatic $ExecutionContext variable." time="0.0229" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Should call the original command from the proper scope if no parameter filters match" name="When calling Mock on a module-internal function..Using Mock -ModuleName &quot;ModuleName&quot; &quot;CommandName&quot; syntax.Should call the original command from the proper scope if no parameter filters match" time="0.0362" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Does not trigger the mocked Get-Content from Pester internals" name="When calling Mock on a module-internal function..Using Mock -ModuleName &quot;ModuleName&quot; &quot;CommandName&quot; syntax.Does not trigger the mocked Get-Content from Pester internals" time="0.0374" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-case description="Should fail to call the internal module function" name="When calling Mock on a module-internal function..Should fail to call the internal module function" time="0.1829" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Should call the actual internal module function from the public function" name="When calling Mock on a module-internal function..Should call the actual internal module function from the public function" time="0.0144" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="When Applying multiple Mocks on a single command" executed="True" result="Success" success="False" time="0.3455" asserts="0" description="When Applying multiple Mocks on a single command">
+        <results>
+          <test-case description="Should Invoke the mocked script for the first Mock" name="When Applying multiple Mocks on a single command.Should Invoke the mocked script for the first Mock" time="0.3343" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Should Invoke the mocked script for the second Mock" name="When Applying multiple Mocks on a single command.Should Invoke the mocked script for the second Mock" time="0.0112" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="When Applying multiple Mocks with filters on a single command where both qualify" executed="True" result="Success" success="False" time="0.163" asserts="0" description="When Applying multiple Mocks with filters on a single command where both qualify">
+        <results>
+          <test-case description="The last Mock should win" name="When Applying multiple Mocks with filters on a single command where both qualify.The last Mock should win" time="0.163" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="When Applying multiple Mocks on a single command where one has no filter" executed="True" result="Success" success="False" time="0.1721" asserts="0" description="When Applying multiple Mocks on a single command where one has no filter">
+        <results>
+          <test-case description="The parameterless mock is evaluated last" name="When Applying multiple Mocks on a single command where one has no filter.The parameterless mock is evaluated last" time="0.1554" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="The parameterless mock will be applied if no other wins" name="When Applying multiple Mocks on a single command where one has no filter.The parameterless mock will be applied if no other wins" time="0.0166" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="When Creating a Verifiable Mock that is not called" executed="True" result="Success" success="False" time="0.5226" asserts="0" description="When Creating a Verifiable Mock that is not called">
+        <results>
+          <test-suite type="TestFixture" name="In the test script's scope" executed="True" result="Success" success="False" time="0.2828" asserts="0" description="In the test script's scope">
+            <results>
+              <test-case description="Should throw" name="When Creating a Verifiable Mock that is not called.In the test script's scope.Should throw" time="0.2828" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="In a module's scope" executed="True" result="Success" success="False" time="0.2398" asserts="0" description="In a module's scope">
+            <results>
+              <test-case description="Should throw" name="When Creating a Verifiable Mock that is not called.In a module's scope.Should throw" time="0.2398" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="When Creating a Verifiable Mock that is called" executed="True" result="Success" success="False" time="0.2467" asserts="0" description="When Creating a Verifiable Mock that is called">
+        <results>
+          <test-case description="Assert-VerifiableMocks Should not throw" name="When Creating a Verifiable Mock that is called.Assert-VerifiableMocks Should not throw" time="0.2467" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="When Calling Assert-MockCalled 0 without exactly" executed="True" result="Success" success="False" time="0.1659" asserts="0" description="When Calling Assert-MockCalled 0 without exactly">
+        <results>
+          <test-case description="Should throw if mock was called" name="When Calling Assert-MockCalled 0 without exactly.Should throw if mock was called" time="0.1443" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Should not throw if mock was not called" name="When Calling Assert-MockCalled 0 without exactly.Should not throw if mock was not called" time="0.0216" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="When Calling Assert-MockCalled with exactly" executed="True" result="Success" success="False" time="0.1712" asserts="0" description="When Calling Assert-MockCalled with exactly">
+        <results>
+          <test-case description="Should throw if mock was not called the number of times specified" name="When Calling Assert-MockCalled with exactly.Should throw if mock was not called the number of times specified" time="0.15" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Should not throw if mock was called the number of times specified" name="When Calling Assert-MockCalled with exactly.Should not throw if mock was called the number of times specified" time="0.0212" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="When Calling Assert-MockCalled without exactly" executed="True" result="Success" success="False" time="0.2756" asserts="0" description="When Calling Assert-MockCalled without exactly">
+        <results>
+          <test-case description="Should throw if mock was not called atleast the number of times specified" name="When Calling Assert-MockCalled without exactly.Should throw if mock was not called atleast the number of times specified" time="0.1959" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Should not throw if mock was called at least the number of times specified" name="When Calling Assert-MockCalled without exactly.Should not throw if mock was called at least the number of times specified" time="0.023" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Should not throw if mock was called at exactly the number of times specified" name="When Calling Assert-MockCalled without exactly.Should not throw if mock was called at exactly the number of times specified" time="0.0184" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Should throw an error if any non-matching calls to the mock are made, and the -ExclusiveFilter parameter is used" name="When Calling Assert-MockCalled without exactly.Should throw an error if any non-matching calls to the mock are made, and the -ExclusiveFilter parameter is used" time="0.0383" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Using Pester Scopes (Describe,Context,It)" executed="True" result="Success" success="False" time="1.6513" asserts="0" description="Using Pester Scopes (Describe,Context,It)">
+        <results>
+          <test-suite type="TestFixture" name="When in the first context" executed="True" result="Success" success="False" time="0.31" asserts="0" description="When in the first context">
+            <results>
+              <test-case description="should mock Describe scoped paramles mock" name="Using Pester Scopes (Describe,Context,It).When in the first context.should mock Describe scoped paramles mock" time="0.2887" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="should mock Describe scoped single param mock" name="Using Pester Scopes (Describe,Context,It).When in the first context.should mock Describe scoped single param mock" time="0.0212" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="When in the second context" executed="True" result="Success" success="False" time="0.2498" asserts="0" description="When in the second context">
+            <results>
+              <test-case description="should mock Describe scoped paramles mock again" name="Using Pester Scopes (Describe,Context,It).When in the second context.should mock Describe scoped paramles mock again" time="0.2313" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="should mock Describe scoped single param mock again" name="Using Pester Scopes (Describe,Context,It).When in the second context.should mock Describe scoped single param mock again" time="0.0185" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="When using mocks in both scopes" executed="True" result="Success" success="False" time="0.2621" asserts="0" description="When using mocks in both scopes">
+            <results>
+              <test-case description="should mock Describe scoped mock." name="Using Pester Scopes (Describe,Context,It).When using mocks in both scopes.should mock Describe scoped mock." time="0.2343" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="should mock Context scoped mock." name="Using Pester Scopes (Describe,Context,It).When using mocks in both scopes.should mock Context scoped mock." time="0.0278" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="When context hides a describe mock" executed="True" result="Success" success="False" time="0.2929" asserts="0" description="When context hides a describe mock">
+            <results>
+              <test-case description="should use the context paramles mock" name="Using Pester Scopes (Describe,Context,It).When context hides a describe mock.should use the context paramles mock" time="0.269" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="should use the context parameterized mock" name="Using Pester Scopes (Describe,Context,It).When context hides a describe mock.should use the context parameterized mock" time="0.0239" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="When context no longer hides a describe mock" executed="True" result="Success" success="False" time="0.275" asserts="0" description="When context no longer hides a describe mock">
+            <results>
+              <test-case description="should use the describe mock" name="Using Pester Scopes (Describe,Context,It).When context no longer hides a describe mock.should use the describe mock" time="0.2603" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="should use the describe parameterized mock" name="Using Pester Scopes (Describe,Context,It).When context no longer hides a describe mock.should use the describe parameterized mock" time="0.0147" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="When someone calls Mock from inside an It block" executed="True" result="Success" success="False" time="0.2616" asserts="0" description="When someone calls Mock from inside an It block">
+            <results>
+              <test-case description="Sets the mock" name="Using Pester Scopes (Describe,Context,It).When someone calls Mock from inside an It block.Sets the mock" time="0.2367" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Leaves the mock active in the parent scope" name="Using Pester Scopes (Describe,Context,It).When someone calls Mock from inside an It block.Leaves the mock active in the parent scope" time="0.0249" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Testing mock history behavior from each scope" executed="True" result="Success" success="False" time="1.1276" asserts="0" description="Testing mock history behavior from each scope">
+        <results>
+          <test-suite type="TestFixture" name="Without overriding the mock in lower scopes" executed="True" result="Success" success="False" time="0.4303" asserts="0" description="Without overriding the mock in lower scopes">
+            <results>
+              <test-case description="Reports that zero calls have been made to in the describe scope" name="Testing mock history behavior from each scope.Without overriding the mock in lower scopes.Reports that zero calls have been made to in the describe scope" time="0.352" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Calls the describe mock" name="Testing mock history behavior from each scope.Without overriding the mock in lower scopes.Calls the describe mock" time="0.032" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Reports that zero calls have been made in an It block, after a context-scoped call" name="Testing mock history behavior from each scope.Without overriding the mock in lower scopes.Reports that zero calls have been made in an It block, after a context-scoped call" time="0.0134" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Reports one Context-scoped call" name="Testing mock history behavior from each scope.Without overriding the mock in lower scopes.Reports one Context-scoped call" time="0.0137" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Reports one Describe-scoped call" name="Testing mock history behavior from each scope.Without overriding the mock in lower scopes.Reports one Describe-scoped call" time="0.0192" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="After exiting the previous context" executed="True" result="Success" success="False" time="0.2439" asserts="0" description="After exiting the previous context">
+            <results>
+              <test-case description="Reports zero context-scoped calls in the new context." name="Testing mock history behavior from each scope.After exiting the previous context.Reports zero context-scoped calls in the new context." time="0.2285" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Reports one describe-scoped call from the previous context" name="Testing mock history behavior from each scope.After exiting the previous context.Reports one describe-scoped call from the previous context" time="0.0154" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="While overriding mocks in lower scopes" executed="True" result="Success" success="False" time="0.3321" asserts="0" description="While overriding mocks in lower scopes">
+            <results>
+              <test-case description="Calls the context mock" name="Testing mock history behavior from each scope.While overriding mocks in lower scopes.Calls the context mock" time="0.2406" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Reports one context-scoped call" name="Testing mock history behavior from each scope.While overriding mocks in lower scopes.Reports one context-scoped call" time="0.0134" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Reports two describe-scoped calls, even when one is an override mock in a lower scope" name="Testing mock history behavior from each scope.While overriding mocks in lower scopes.Reports two describe-scoped calls, even when one is an override mock in a lower scope" time="0.0142" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Calls an It-scoped mock" name="Testing mock history behavior from each scope.While overriding mocks in lower scopes.Calls an It-scoped mock" time="0.0252" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Reports 2 context-scoped calls" name="Testing mock history behavior from each scope.While overriding mocks in lower scopes.Reports 2 context-scoped calls" time="0.0233" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Reports 3 describe-scoped calls" name="Testing mock history behavior from each scope.While overriding mocks in lower scopes.Reports 3 describe-scoped calls" time="0.0153" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-case description="Reports 3 describe-scoped calls using the default scope in a Describe block" name="Testing mock history behavior from each scope.Reports 3 describe-scoped calls using the default scope in a Describe block" time="0.1212" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Using a single no param Describe" executed="True" result="Success" success="False" time="0.26" asserts="0" description="Using a single no param Describe">
+        <results>
+          <test-suite type="TestFixture" name="With a context mocking the same function with no params" executed="True" result="Success" success="False" time="0.26" asserts="0" description="With a context mocking the same function with no params">
+            <results>
+              <test-case description="Should use the context mock" name="Using a single no param Describe.With a context mocking the same function with no params.Should use the context mock" time="0.26" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Dot Source Test" executed="True" result="Success" success="False" time="0.3188" asserts="0" description="Dot Source Test">
+        <results>
+          <test-case description="Calls the mock with parameter 'Test'" name="Dot Source Test.Calls the mock with parameter 'Test'" time="0.2927" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Doesn't call the mock with any other parameters" name="Dot Source Test.Doesn't call the mock with any other parameters" time="0.0261" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Mocking Cmdlets with dynamic parameters" executed="True" result="Success" success="False" time="0.1812" asserts="0" description="Mocking Cmdlets with dynamic parameters">
+        <results>
+          <test-case description="Allows calls to be made with dynamic parameters (including parameter filters)" name="Mocking Cmdlets with dynamic parameters.Allows calls to be made with dynamic parameters (including parameter filters)" time="0.1812" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Mocking functions with dynamic parameters" executed="True" result="Success" success="False" time="1.6784" asserts="0" description="Mocking functions with dynamic parameters">
+        <results>
+          <test-suite type="TestFixture" name="Dynamicparam block that uses the variables of static parameters in its logic" executed="True" result="Success" success="False" time="0.3447" asserts="0" description="Dynamicparam block that uses the variables of static parameters in its logic">
+            <results>
+              <test-case description="Allows calls to be made with dynamic parameters (including parameter filters)" name="Mocking functions with dynamic parameters.Dynamicparam block that uses the variables of static parameters in its logic.Allows calls to be made with dynamic parameters (including parameter filters)" time="0.3185" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Sets the dynamic parameter variable properly" name="Mocking functions with dynamic parameters.Dynamicparam block that uses the variables of static parameters in its logic.Sets the dynamic parameter variable properly" time="0.0262" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="When the mocked command is in a module" executed="True" result="Success" success="False" time="0.2707" asserts="0" description="When the mocked command is in a module">
+            <results>
+              <test-case description="Allows calls to be made with dynamic parameters (including parameter filters)" name="Mocking functions with dynamic parameters.When the mocked command is in a module.Allows calls to be made with dynamic parameters (including parameter filters)" time="0.2707" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="When the mocked command has mandatory parameters that are passed in via the pipeline" executed="True" result="Success" success="False" time="0.2826" asserts="0" description="When the mocked command has mandatory parameters that are passed in via the pipeline">
+            <results>
+              <test-case description="Should successfully call the mock and generate the dynamic parameters" name="Mocking functions with dynamic parameters.When the mocked command has mandatory parameters that are passed in via the pipeline.Should successfully call the mock and generate the dynamic parameters" time="0.2826" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="When the mocked command has parameter sets that are ambiguous at the time the dynamic param block is executed" executed="True" result="Success" success="False" time="0.2652" asserts="0" description="When the mocked command has parameter sets that are ambiguous at the time the dynamic param block is executed">
+            <results>
+              <test-case description="Should successfully call the mock and generate the dynamic parameters" name="Mocking functions with dynamic parameters.When the mocked command has parameter sets that are ambiguous at the time the dynamic param block is executed.Should successfully call the mock and generate the dynamic parameters" time="0.2652" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="When the mocked command's dynamicparam block depends on the contents of $PSBoundParameters" executed="True" result="Success" success="False" time="0.2546" asserts="0" description="When the mocked command's dynamicparam block depends on the contents of $PSBoundParameters">
+            <results>
+              <test-case description="Should successfully call the mock and generate the dynamic parameters" name="Mocking functions with dynamic parameters.When the mocked command's dynamicparam block depends on the contents of $PSBoundParameters.Should successfully call the mock and generate the dynamic parameters" time="0.2546" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="When the mocked command's dynamicparam block depends on the contents of $PSCmdlet.ParameterSetName" executed="True" result="Success" success="False" time="0.2606" asserts="0" description="When the mocked command's dynamicparam block depends on the contents of $PSCmdlet.ParameterSetName">
+            <results>
+              <test-case description="Should successfully call the mock and generate the dynamic parameters" name="Mocking functions with dynamic parameters.When the mocked command's dynamicparam block depends on the contents of $PSCmdlet.ParameterSetName.Should successfully call the mock and generate the dynamic parameters" time="0.2606" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Mocking Cmdlets with dynamic parameters in a module" executed="True" result="Success" success="False" time="0.2659" asserts="0" description="Mocking Cmdlets with dynamic parameters in a module">
+        <results>
+          <test-case description="Allows calls to be made with dynamic parameters (including parameter filters)" name="Mocking Cmdlets with dynamic parameters in a module.Allows calls to be made with dynamic parameters (including parameter filters)" time="0.2659" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="DynamicParam blocks in other scopes" executed="True" result="Success" success="False" time="0.2053" asserts="0" description="DynamicParam blocks in other scopes">
+        <results>
+          <test-case description="Properly evaluates dynamic parameters when called from another scope" name="DynamicParam blocks in other scopes.Properly evaluates dynamic parameters when called from another scope" time="0.1846" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Properly evaluates dynamic parameters when called from another scope when the call is from a ValidateScript block" name="DynamicParam blocks in other scopes.Properly evaluates dynamic parameters when called from another scope when the call is from a ValidateScript block" time="0.0207" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Parameter Filters and Common Parameters" executed="True" result="Success" success="False" time="0.1897" asserts="0" description="Parameter Filters and Common Parameters">
+        <results>
+          <test-case description="Applies common parameters correctly when testing the parameter filter" name="Parameter Filters and Common Parameters.Applies common parameters correctly when testing the parameter filter" time="0.1897" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Mocking Get-ItemProperty" executed="True" result="Success" success="False" time="0.1908" asserts="0" description="Mocking Get-ItemProperty">
+        <results>
+          <test-case description="Does not fail with NotImplementedException" name="Mocking Get-ItemProperty.Does not fail with NotImplementedException" time="0.1908" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="When mocking a command with parameters that match internal variable names" executed="True" result="Success" success="False" time="0.1735" asserts="0" description="When mocking a command with parameters that match internal variable names">
+        <results>
+          <test-case description="Should execute the mocked command successfully" name="When mocking a command with parameters that match internal variable names.Should execute the mocked command successfully" time="0.1735" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Mocking commands with potentially ambigious parameter sets" executed="True" result="Success" success="False" time="0.166" asserts="0" description="Mocking commands with potentially ambigious parameter sets">
+        <results>
+          <test-case description="Should call the function successfully, even with delayed parameter binding" name="Mocking commands with potentially ambigious parameter sets.Should call the function successfully, even with delayed parameter binding" time="0.166" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="When mocking a command that has an ArgumentList parameter with validation" executed="True" result="Success" success="False" time="0.1798" asserts="0" description="When mocking a command that has an ArgumentList parameter with validation">
+        <results>
+          <test-case description="Calls the mock properly" name="When mocking a command that has an ArgumentList parameter with validation.Calls the mock properly" time="0.1798" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Mocking New-Object" executed="True" result="Success" success="False" time="0.1629" asserts="0" description="Mocking New-Object">
+        <results>
+          <test-case description="Works properly" name="Mocking New-Object.Works properly" time="0.1629" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Mocking a function taking input from pipeline" executed="True" result="Success" success="False" time="1.8441" asserts="0" description="Mocking a function taking input from pipeline">
+        <results>
+          <test-suite type="TestFixture" name="when calling original function with an array" executed="True" result="Success" success="False" time="0.3297" asserts="0" description="when calling original function with an array">
+            <results>
+              <test-case description="Returns actual implementation" name="Mocking a function taking input from pipeline.when calling original function with an array.Returns actual implementation" time="0.3297" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="when calling original function with an int" executed="True" result="Success" success="False" time="0.2466" asserts="0" description="when calling original function with an int">
+            <results>
+              <test-case description="Returns actual implementation" name="Mocking a function taking input from pipeline.when calling original function with an int.Returns actual implementation" time="0.2466" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="when calling original function with a string" executed="True" result="Success" success="False" time="0.2521" asserts="0" description="when calling original function with a string">
+            <results>
+              <test-case description="Returns actual implementation" name="Mocking a function taking input from pipeline.when calling original function with a string.Returns actual implementation" time="0.2521" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="when calling original function and pipeline is bound by property name" executed="True" result="Success" success="False" time="0.2676" asserts="0" description="when calling original function and pipeline is bound by property name">
+            <results>
+              <test-case description="Returns actual implementation" name="Mocking a function taking input from pipeline.when calling original function and pipeline is bound by property name.Returns actual implementation" time="0.2676" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="when calling original function and forcing a parameter binding exception" executed="True" result="Success" success="False" time="0.2494" asserts="0" description="when calling original function and forcing a parameter binding exception">
+            <results>
+              <test-case description="falls back to no pipeline input" name="Mocking a function taking input from pipeline.when calling original function and forcing a parameter binding exception.falls back to no pipeline input" time="0.2494" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="when calling original function and pipeline is bound by property name with array values" executed="True" result="Success" success="False" time="0.2533" asserts="0" description="when calling original function and pipeline is bound by property name with array values">
+            <results>
+              <test-case description="Returns actual implementation" name="Mocking a function taking input from pipeline.when calling original function and pipeline is bound by property name with array values.Returns actual implementation" time="0.2533" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="when calling the mocked function" executed="True" result="Success" success="False" time="0.2454" asserts="0" description="when calling the mocked function">
+            <results>
+              <test-case description="Returns mocked implementation" name="Mocking a function taking input from pipeline.when calling the mocked function.Returns mocked implementation" time="0.2454" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Mocking module-qualified calls" executed="True" result="Success" success="False" time="0.4273" asserts="0" description="Mocking module-qualified calls">
+        <results>
+          <test-case description="Mock alias should not exist before the mock is defined" name="Mocking module-qualified calls.Mock alias should not exist before the mock is defined" time="0.2345" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Creates the alias while the mock is in effect" name="Mocking module-qualified calls.Creates the alias while the mock is in effect" time="0.1277" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Calls the mock properly even if the call is module-qualified" name="Mocking module-qualified calls.Calls the mock properly even if the call is module-qualified" time="0.065" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="After a mock goes out of scope" executed="True" result="Success" success="False" time="0.1283" asserts="0" description="After a mock goes out of scope">
+        <results>
+          <test-case description="Removes the alias after the mock goes out of scope" name="After a mock goes out of scope.Removes the alias after the mock goes out of scope" time="0.1283" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Assert-MockCalled with Aliases" executed="True" result="Success" success="False" time="0.1656" asserts="0" description="Assert-MockCalled with Aliases">
+        <results>
+          <test-case description="Allows calls to Assert-MockCalled to use both aliases and the original command name" name="Assert-MockCalled with Aliases.Allows calls to Assert-MockCalled to use both aliases and the original command name" time="0.1656" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Mocking Get-Command" executed="True" result="Success" success="False" time="0.1463" asserts="0" description="Mocking Get-Command">
+        <results>
+          <test-case description="Does not break when Get-Command is mocked" name="Mocking Get-Command.Does not break when Get-Command is mocked" time="0.1463" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Mocks with closures" executed="True" result="Success" success="False" time="0.178" asserts="0" description="Mocks with closures">
+        <results>
+          <test-case description="Resolves variables in the closure rather than Pester's current scope" name="Mocks with closures.Resolves variables in the closure rather than Pester's current scope" time="0.178" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="$args handling" executed="True" result="Success" success="False" time="0.3378" asserts="0" description="$args handling">
+        <results>
+          <test-case description="Advanced function mock should be callable with dot operator" name="$args handling.Advanced function mock should be callable with dot operator" time="0.2738" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Advanced function with Args parameter should be mockable" name="$args handling.Advanced function with Args parameter should be mockable" time="0.0276" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Cmdlet with Args parameter should be mockable" name="$args handling.Cmdlet with Args parameter should be mockable" time="0.0363" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Single quote in command/module name" executed="True" result="Success" success="False" time="0.1968" asserts="0" description="Single quote in command/module name">
+        <results>
+          <test-case description="Command with single quote in module name should be mockable" name="Single quote in command/module name.Command with single quote in module name should be mockable" time="0.1626" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Command with single quote in name should be mockable" name="Single quote in command/module name.Command with single quote in name should be mockable" time="0.0342" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Mocking cmdlet without positional parameters" executed="True" result="Success" success="False" time="0.3436" asserts="0" description="Mocking cmdlet without positional parameters">
+        <results>
+          <test-case description="Original cmdlet does not have positional parameters" name="Mocking cmdlet without positional parameters.Original cmdlet does not have positional parameters" time="0.2613" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Mock of cmdlet should not make parameters to be positional" name="Mocking cmdlet without positional parameters.Mock of cmdlet should not make parameters to be positional" time="0.0277" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Original cmdlet bind all to Remainings" name="Mocking cmdlet without positional parameters.Original cmdlet bind all to Remainings" time="0.0132" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Mock of cmdlet should bind all to Remainings" name="Mocking cmdlet without positional parameters.Mock of cmdlet should bind all to Remainings" time="0.0414" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Nested Mock calls" executed="True" result="Success" success="False" time="0.1857" asserts="0" description="Nested Mock calls">
+        <results>
+          <test-case description="Properly handles nested mocks" name="Nested Mock calls.Properly handles nested mocks" time="0.1857" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Globbing characters in command name" executed="True" result="Success" success="False" time="0.2003" asserts="0" description="Globbing characters in command name">
+        <results>
+          <test-case description="Command with globbing characters in name should be mockable" name="Globbing characters in command name.Command with globbing characters in name should be mockable" time="0.2003" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+  <test-suite type="TestFixture" name="C:\Users\Dave\Documents\GitHub\pester\Functions\New-Fixture.Tests.ps1" executed="True" result="Success" success="False" time="0.7687" asserts="0" description="C:\Users\Dave\Documents\GitHub\pester\Functions\New-Fixture.Tests.ps1">
+    <results>
+      <test-suite type="TestFixture" name="New-Fixture" executed="True" result="Success" success="False" time="0.7687" asserts="0" description="New-Fixture">
+        <results>
+          <test-suite type="TestFixture" name="Only Name parameter is specified:" executed="True" result="Success" success="False" time="0.1615" asserts="0" description="Only Name parameter is specified:">
+            <results>
+              <test-case description="Creates fixture in current directory:" name="New-Fixture.Only Name parameter is specified:.Creates fixture in current directory:" time="0.1615" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="Name and Path parameter is specified:" executed="True" result="Success" success="False" time="0.4536" asserts="0" description="Name and Path parameter is specified:">
+            <results>
+              <test-case description="Creates fixture in full Path:" name="New-Fixture.Name and Path parameter is specified:.Creates fixture in full Path:" time="0.2556" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Creates fixture in relative Path:" name="New-Fixture.Name and Path parameter is specified:.Creates fixture in relative Path:" time="0.0454" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Creates fixture if Path is set to '.':" name="New-Fixture.Name and Path parameter is specified:.Creates fixture if Path is set to '.':" time="0.04" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Creates fixture if Path is set to '(pwd)':" name="New-Fixture.Name and Path parameter is specified:.Creates fixture if Path is set to '(pwd)':" time="0.0427" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Writes warning if file exists" name="New-Fixture.Name and Path parameter is specified:.Writes warning if file exists" time="0.07" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-case description="Name parameter is mandatory:" name="New-Fixture.Name parameter is mandatory:" time="0.1536" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+  <test-suite type="TestFixture" name="C:\Users\Dave\Documents\GitHub\pester\Functions\PesterState.Tests.ps1" executed="True" result="Success" success="False" time="3.6177" asserts="0" description="C:\Users\Dave\Documents\GitHub\pester\Functions\PesterState.Tests.ps1">
+    <results>
+      <test-suite type="TestFixture" name="New-PesterState" executed="True" result="Success" success="False" time="1.3455" asserts="0" description="New-PesterState">
+        <results>
+          <test-suite type="TestFixture" name="TestNameFilter parameter is set" executed="True" result="Success" success="False" time="0.3864" asserts="0" description="TestNameFilter parameter is set">
+            <results>
+              <test-case description="sets the TestNameFilter property" name="New-PesterState.TestNameFilter parameter is set.sets the TestNameFilter property" time="0.3864" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="TagFilter parameter is set" executed="True" result="Success" success="False" time="0.24" asserts="0" description="TagFilter parameter is set">
+            <results>
+              <test-case description="sets the TestNameFilter property" name="New-PesterState.TagFilter parameter is set.sets the TestNameFilter property" time="0.24" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="ExcludeTagFilter parameter is set" executed="True" result="Success" success="False" time="0.2338" asserts="0" description="ExcludeTagFilter parameter is set">
+            <results>
+              <test-case description="sets the ExcludeTagFilter property" name="New-PesterState.ExcludeTagFilter parameter is set.sets the ExcludeTagFilter property" time="0.2338" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="TagFilter and ExcludeTagFilter parameter are set" executed="True" result="Success" success="False" time="0.2436" asserts="0" description="TagFilter and ExcludeTagFilter parameter are set">
+            <results>
+              <test-case description="sets the TestNameFilter property" name="New-PesterState.TagFilter and ExcludeTagFilter parameter are set.sets the TestNameFilter property" time="0.2307" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="sets the ExcludeTagFilter property" name="New-PesterState.TagFilter and ExcludeTagFilter parameter are set.sets the ExcludeTagFilter property" time="0.013" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="TestNameFilter and TagFilter parameter is set" executed="True" result="Success" success="False" time="0.2417" asserts="0" description="TestNameFilter and TagFilter parameter is set">
+            <results>
+              <test-case description="sets the TestNameFilter property" name="New-PesterState.TestNameFilter and TagFilter parameter is set.sets the TestNameFilter property" time="0.2295" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="sets the TestNameFilter property" name="New-PesterState.TestNameFilter and TagFilter parameter is set.sets the TestNameFilter property" time="0.0122" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Pester state object" executed="True" result="Success" success="False" time="1.2209" asserts="0" description="Pester state object">
+        <results>
+          <test-suite type="TestFixture" name="entering describe" executed="True" result="Success" success="False" time="0.36" asserts="0" description="entering describe">
+            <results>
+              <test-case description="enters describe" name="Pester state object.entering describe.enters describe" time="0.36" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="leaving describe" executed="True" result="Success" success="False" time="0.2393" asserts="0" description="leaving describe">
+            <results>
+              <test-case description="leaves describe" name="Pester state object.leaving describe.leaves describe" time="0.2393" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="adding test result" executed="True" result="Success" success="False" time="0.3286" asserts="0" description="adding test result">
+            <results>
+              <test-case description="adds passed test" name="Pester state object.adding test result.adds passed test" time="0.2518" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="adds failed test" name="Pester state object.adding test result.adds failed test" time="0.0366" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="adds skipped test" name="Pester state object.adding test result.adds skipped test" time="0.0234" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="adds Pending test" name="Pester state object.adding test result.adds Pending test" time="0.0167" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="Path and TestNameFilter parameter is set" executed="True" result="Success" success="False" time="0.2931" asserts="0" description="Path and TestNameFilter parameter is set">
+            <results>
+              <test-case description="Keeps Passed state" name="Pester state object.Path and TestNameFilter parameter is set.Keeps Passed state" time="0.2426" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Keeps Failed state" name="Pester state object.Path and TestNameFilter parameter is set.Keeps Failed state" time="0.014" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Changes Pending state to Failed" name="Pester state object.Path and TestNameFilter parameter is set.Changes Pending state to Failed" time="0.0202" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Changes Skipped state to Failed" name="Pester state object.Path and TestNameFilter parameter is set.Changes Skipped state to Failed" time="0.0164" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="ConvertTo-FailureLines" executed="True" result="Success" success="False" time="1.0514" asserts="0" description="ConvertTo-FailureLines">
+        <results>
+          <test-suite type="TestFixture" name="should fails in file" executed="True" result="Success" success="False" time="0.1756" asserts="0" description="should fails in file">
+            <results>
+              <test-case description="produces correct message lines." name="ConvertTo-FailureLines.should fails in file.produces correct message lines." time="0.1528" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="produces correct trace lines." name="ConvertTo-FailureLines.should fails in file.produces correct trace lines." time="0.0228" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="exception thrown in nested functions in file" executed="True" result="Success" success="False" time="0.2713" asserts="0" description="exception thrown in nested functions in file">
+            <results>
+              <test-case description="produces correct message lines." name="ConvertTo-FailureLines.exception thrown in nested functions in file.produces correct message lines." time="0.2425" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="produces correct trace lines." name="ConvertTo-FailureLines.exception thrown in nested functions in file.produces correct trace lines." time="0.0288" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="nested exceptions thrown in file" executed="True" result="Success" success="False" time="0.2845" asserts="0" description="nested exceptions thrown in file">
+            <results>
+              <test-case description="produces correct message lines." name="ConvertTo-FailureLines.nested exceptions thrown in file.produces correct message lines." time="0.2664" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="produces correct trace line." name="ConvertTo-FailureLines.nested exceptions thrown in file.produces correct trace line." time="0.0181" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-case description="produces correct message lines." name="ConvertTo-FailureLines.produces correct message lines." time="0.2865" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="failed should produces correct message lines." name="ConvertTo-FailureLines.failed should produces correct message lines." time="0.0334" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+  <test-suite type="TestFixture" name="C:\Users\Dave\Documents\GitHub\pester\Functions\SetupTeardown.Tests.ps1" executed="True" result="Success" success="False" time="2.2723" asserts="0" description="C:\Users\Dave\Documents\GitHub\pester\Functions\SetupTeardown.Tests.ps1">
+    <results>
+      <test-suite type="TestFixture" name="Describe-Scoped Test Case setup" executed="True" result="Success" success="False" time="0.264" asserts="0" description="Describe-Scoped Test Case setup">
+        <results>
+          <test-case description="Assigns the correct value in first test" name="Describe-Scoped Test Case setup.Assigns the correct value in first test" time="0.2527" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Assigns the correct value in subsequent tests" name="Describe-Scoped Test Case setup.Assigns the correct value in subsequent tests" time="0.0113" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Context-scoped Test Case setup" executed="True" result="Success" success="False" time="0.3671" asserts="0" description="Context-scoped Test Case setup">
+        <results>
+          <test-suite type="TestFixture" name="The context" executed="True" result="Success" success="False" time="0.2466" asserts="0" description="The context">
+            <results>
+              <test-case description="Assigns the correct value inside the context" name="Context-scoped Test Case setup.The context.Assigns the correct value inside the context" time="0.2466" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-case description="Reports the original value after the Context" name="Context-scoped Test Case setup.Reports the original value after the Context" time="0.1205" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Multiple Test Case setup blocks" executed="True" result="Success" success="False" time="0.3769" asserts="0" description="Multiple Test Case setup blocks">
+        <results>
+          <test-suite type="TestFixture" name="The context" executed="True" result="Success" success="False" time="0.2593" asserts="0" description="The context">
+            <results>
+              <test-case description="Executes Describe setup blocks first, then Context blocks in the order they were defined (even if they are defined after the It block.)" name="Multiple Test Case setup blocks.The context.Executes Describe setup blocks first, then Context blocks in the order they were defined (even if they are defined after the It block.)" time="0.2593" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-case description="Continues to execute Describe setup blocks after the Context" name="Multiple Test Case setup blocks.Continues to execute Describe setup blocks after the Context" time="0.1176" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Describe-scoped Test Case teardown" executed="True" result="Success" success="False" time="0.1419" asserts="0" description="Describe-scoped Test Case teardown">
+        <results>
+          <test-case description="Does not modify the variable before the first test" name="Describe-scoped Test Case teardown.Does not modify the variable before the first test" time="0.1297" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Modifies the variable after the first test" name="Describe-scoped Test Case teardown.Modifies the variable after the first test" time="0.0121" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Multiple Test Case teardown blocks" executed="True" result="Success" success="False" time="0.2815" asserts="0" description="Multiple Test Case teardown blocks">
+        <results>
+          <test-suite type="TestFixture" name="The context" executed="True" result="Success" success="False" time="0.2815" asserts="0" description="The context">
+            <results>
+              <test-case description="Performs a test in Context" name="Multiple Test Case teardown blocks.The context.Performs a test in Context" time="0.2694" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Executes Describe teardown blocks after Context teardown blocks" name="Multiple Test Case teardown blocks.The context.Executes Describe teardown blocks after Context teardown blocks" time="0.0121" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Test Group Setup and Teardown" executed="True" result="Success" success="False" time="0.5446" asserts="0" description="Test Group Setup and Teardown">
+        <results>
+          <test-suite type="TestFixture" name="Context scoped setup and teardown" executed="True" result="Success" success="False" time="0.1576" asserts="0" description="Context scoped setup and teardown">
+            <results>
+              <test-case description="Executed the Context BeforeAll block" name="Test Group Setup and Teardown.Context scoped setup and teardown.Executed the Context BeforeAll block" time="0.1399" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has not executed any other blocks yet" name="Test Group Setup and Teardown.Context scoped setup and teardown.Has not executed any other blocks yet" time="0.0177" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-case description="Executed the Describe BeforeAll regardless of definition order" name="Test Group Setup and Teardown.Executed the Describe BeforeAll regardless of definition order" time="0.2464" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Did not execute any other block yet" name="Test Group Setup and Teardown.Did not execute any other block yet" time="0.0145" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Executed the Context AfterAll block" name="Test Group Setup and Teardown.Executed the Context AfterAll block" time="0.1261" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Finishing TestGroup Setup and Teardown tests" executed="True" result="Success" success="False" time="0.1379" asserts="0" description="Finishing TestGroup Setup and Teardown tests">
+        <results>
+          <test-case description="Executed each Describe and Context group block once" name="Finishing TestGroup Setup and Teardown tests.Executed each Describe and Context group block once" time="0.1379" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Script Blocks and file association (testing automatic variables)" executed="True" result="Success" success="False" time="0.1585" asserts="0" description="Script Blocks and file association (testing automatic variables)">
+        <results>
+          <test-case description="Creates script block objects associated with the proper file" name="Script Blocks and file association (testing automatic variables).Creates script block objects associated with the proper file" time="0.1451" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Has the correct automatic variable values inside the BeforeEach block" name="Script Blocks and file association (testing automatic variables).Has the correct automatic variable values inside the BeforeEach block" time="0.0134" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+  <test-suite type="TestFixture" name="C:\Users\Dave\Documents\GitHub\pester\Functions\TestDrive.Tests.ps1" executed="True" result="Success" success="False" time="3.7794" asserts="0" description="C:\Users\Dave\Documents\GitHub\pester\Functions\TestDrive.Tests.ps1">
+    <results>
+      <test-suite type="TestFixture" name="Setup" executed="True" result="Success" success="False" time="0.1564" asserts="0" description="Setup">
+        <results>
+          <test-case description="returns a location that is in a temp area" name="Setup.returns a location that is in a temp area" time="0.1444" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="creates a drive location called TestDrive:" name="Setup.creates a drive location called TestDrive:" time="0.012" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="TestDrive" executed="True" result="Success" success="False" time="0.1288" asserts="0" description="TestDrive">
+        <results>
+          <test-case description="handles creation of a drive with . characters in the path" name="TestDrive.handles creation of a drive with . characters in the path" time="0.1288" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Create filesystem with directories" executed="True" result="Success" success="False" time="0.3414" asserts="0" description="Create filesystem with directories">
+        <results>
+          <test-case description="creates directory when called with no file content" name="Create filesystem with directories.creates directory when called with no file content" time="0.3267" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="creates another directory when called with no file content and doesnt remove first directory" name="Create filesystem with directories.creates another directory when called with no file content and doesnt remove first directory" time="0.0147" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Create nested directory structure" executed="True" result="Success" success="False" time="0.2577" asserts="0" description="Create nested directory structure">
+        <results>
+          <test-case description="creates parent directory" name="Create nested directory structure.creates parent directory" time="0.2457" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="creates child directory underneath parent" name="Create nested directory structure.creates child directory underneath parent" time="0.012" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Create a file with no content" executed="True" result="Success" success="False" time="0.2521" asserts="0" description="Create a file with no content">
+        <results>
+          <test-case description="creates file" name="Create a file with no content.creates file" time="0.2384" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="also has no content" name="Create a file with no content.also has no content" time="0.0138" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Create a file with content" executed="True" result="Success" success="False" time="0.2466" asserts="0" description="Create a file with content">
+        <results>
+          <test-case description="creates file" name="Create a file with content.creates file" time="0.2304" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="adds content to the file" name="Create a file with content.adds content to the file" time="0.0162" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Create file with passthru" executed="True" result="Success" success="False" time="0.2394" asserts="0" description="Create file with passthru">
+        <results>
+          <test-case description="returns the file from the temp location" name="Create file with passthru.returns the file from the temp location" time="0.2394" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Create directory with passthru" executed="True" result="Success" success="False" time="0.2441" asserts="0" description="Create directory with passthru">
+        <results>
+          <test-case description="returns the directory from the temp location" name="Create directory with passthru.returns the directory from the temp location" time="0.2441" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="TestDrive scoping" executed="True" result="Success" success="False" time="0.7416" asserts="0" description="TestDrive scoping">
+        <results>
+          <test-suite type="TestFixture" name="Describe file is available in context" executed="True" result="Success" success="False" time="0.6118" asserts="0" description="Describe file is available in context">
+            <results>
+              <test-case description="Finds the file" name="TestDrive scoping.Describe file is available in context.Finds the file" time="0.3722" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Creates It-scoped contents" name="TestDrive scoping.Describe file is available in context.Creates It-scoped contents" time="0.2257" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Does not clear It-scoped contents on exit" name="TestDrive scoping.Describe file is available in context.Does not clear It-scoped contents on exit" time="0.0139" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-case description="Context file are removed when returning to Describe" name="TestDrive scoping.Context file are removed when returning to Describe" time="0.1162" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Describe file is still available in Describe" name="TestDrive scoping.Describe file is still available in Describe" time="0.0135" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Cleanup" executed="True" result="Success" success="False" time="0" asserts="0" description="Cleanup">
+        <results />
+      </test-suite>
+      <test-suite type="TestFixture" name="Cleanup" executed="True" result="Success" success="False" time="0.3563" asserts="0" description="Cleanup">
+        <results>
+          <test-case description="should have removed the temp folder from the previous fixture" name="Cleanup.should have removed the temp folder from the previous fixture" time="0.3432" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="should also remove the TestDrive:" name="Cleanup.should also remove the TestDrive:" time="0.0131" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Cleanup when Remove-Item is mocked" executed="True" result="Success" success="False" time="0.5689" asserts="0" description="Cleanup when Remove-Item is mocked">
+        <results>
+          <test-suite type="TestFixture" name="add a temp directory" executed="True" result="Success" success="False" time="0" asserts="0" description="add a temp directory">
+            <results />
+          </test-suite>
+          <test-suite type="TestFixture" name="next context" executed="True" result="Success" success="False" time="0.5689" asserts="0" description="next context">
+            <results>
+              <test-case description="should have removed the temp folder" name="Cleanup when Remove-Item is mocked.next context.should have removed the temp folder" time="0.5689" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="New-RandomTempDirectory" executed="True" result="Success" success="False" time="0.2462" asserts="0" description="New-RandomTempDirectory">
+        <results>
+          <test-case description="creates randomly named directory" name="New-RandomTempDirectory.creates randomly named directory" time="0.2462" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+  <test-suite type="TestFixture" name="C:\Users\Dave\Documents\GitHub\pester\Functions\TestResults.Tests.ps1" executed="True" result="Failure" success="False" time="1.7044" asserts="0" description="C:\Users\Dave\Documents\GitHub\pester\Functions\TestResults.Tests.ps1">
+    <results>
+      <test-suite type="TestFixture" name="Write nunit test results" executed="True" result="Failure" success="False" time="1.2095" asserts="0" description="Write nunit test results">
+        <results>
+          <test-suite type="TestFixture" name="Exporting Parameterized Tests (Newer format)" executed="True" result="Failure" success="False" time="0.2295" asserts="0" description="Exporting Parameterized Tests (Newer format)">
+            <results>
+              <test-case description="should write parameterized test results correctly" name="Write nunit test results.Exporting Parameterized Tests (Newer format).should write parameterized test results correctly" time="0.2113" asserts="0" success="False" result="Failure" executed="True">
+                <failure>
+                  <message>Expected: {Mocked Describe.Parameterized Testcase &lt;A&gt;}
+But was:  {}</message>
+                  <stack-trace>at line: 199 in C:\Users\Dave\Documents\GitHub\pester\Functions\TestResults.Tests.ps1
+199:                 $xmlTestSuite.name        | Should Be 'Mocked Describe.Parameterized Testcase &lt;A&gt;'
+</stack-trace>
+                </failure>
+              </test-case>
+              <test-case description="Should validate test results against the nunit 2.5 schema" name="Write nunit test results.Exporting Parameterized Tests (Newer format).Should validate test results against the nunit 2.5 schema" time="0.0181" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-case description="should write a successful test result" name="Write nunit test results.should write a successful test result" time="0.4755" asserts="0" success="False" result="Failure" executed="True">
+            <failure>
+              <message>Expected: {Mocked Describe.Successful testcase}
+But was:  {}</message>
+              <stack-trace>at line: 18 in C:\Users\Dave\Documents\GitHub\pester\Functions\TestResults.Tests.ps1
+18:             $xmlTestCase.name     | Should Be "Mocked Describe.Successful testcase"
+</stack-trace>
+            </failure>
+          </test-case>
+          <test-case description="should write a failed test result" name="Write nunit test results.should write a failed test result" time="0.0689" asserts="0" success="False" result="Failure" executed="True">
+            <failure>
+              <message>Expected: {Mocked Describe.Failed testcase}
+But was:  {}</message>
+              <stack-trace>at line: 35 in C:\Users\Dave\Documents\GitHub\pester\Functions\TestResults.Tests.ps1
+35:             $xmlTestCase.name                   | Should Be "Mocked Describe.Failed testcase"
+</stack-trace>
+            </failure>
+          </test-case>
+          <test-case description="should write the test summary" name="Write nunit test results.should write the test summary" time="0.0644" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="should write the test-suite information" name="Write nunit test results.should write the test-suite information" time="0.0644" asserts="0" success="False" result="Failure" executed="True">
+            <failure>
+              <message>Expected: {TestFixture}
+But was:  {}</message>
+              <stack-trace>at line: 72 in C:\Users\Dave\Documents\GitHub\pester\Functions\TestResults.Tests.ps1
+72:             $xmlTestResult.type            | Should Be "TestFixture"
+</stack-trace>
+            </failure>
+          </test-case>
+          <test-case description="should write two test-suite elements for two describes" name="Write nunit test results.should write two test-suite elements for two describes" time="0.0731" asserts="0" success="False" result="Failure" executed="True">
+            <failure>
+              <message>Expected: {Describe #1}
+But was:  {}</message>
+              <stack-trace>at line: 95 in C:\Users\Dave\Documents\GitHub\pester\Functions\TestResults.Tests.ps1
+95:             $xmlTestSuite1.name        | Should Be "Describe #1"
+</stack-trace>
+            </failure>
+          </test-case>
+          <test-case description="should write the environment information" name="Write nunit test results.should write the environment information" time="0.0652" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Should validate test results against the nunit 2.5 schema" name="Write nunit test results.Should validate test results against the nunit 2.5 schema" time="0.1046" asserts="0" success="False" result="Failure" executed="True">
+            <failure>
+              <message>Expected: the expression not to throw an exception. Message was {Exception calling "Validate" with "1" argument(s): "The element 'test-results' has invalid child element 'test-suite'."}
+    from C:\Users\Dave\Documents\GitHub\pester\Functions\TestResults.Tests.ps1:141 char:15
+    +             { $xml.Validate({throw $args.Exception }) } | Should Not  ...
+    +               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</message>
+              <stack-trace>at line: 141 in C:\Users\Dave\Documents\GitHub\pester\Functions\TestResults.Tests.ps1
+141:             { $xml.Validate({throw $args.Exception }) } | Should Not Throw
+</stack-trace>
+            </failure>
+          </test-case>
+          <test-case description="handles special characters in block descriptions well -!@#$%^&amp;*()_+1234567890[];'',./&quot;- " name="Write nunit test results.handles special characters in block descriptions well -!@#$%^&amp;*()_+1234567890[];'',./&quot;- " time="0.0639" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Get-TestTime" executed="True" result="Success" success="False" time="0.2769" asserts="0" description="Get-TestTime">
+        <results>
+          <test-case description="output is culture agnostic" name="Get-TestTime.output is culture agnostic" time="0.2597" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Time is measured in seconds with 0,1 millisecond as lowest value" name="Get-TestTime.Time is measured in seconds with 0,1 millisecond as lowest value" time="0.0172" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="GetFullPath" executed="True" result="Success" success="False" time="0.2179" asserts="0" description="GetFullPath">
+        <results>
+          <test-case description="Resolves non existing path correctly" name="GetFullPath.Resolves non existing path correctly" time="0.1627" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Resolves existing path correctly" name="GetFullPath.Resolves existing path correctly" time="0.0362" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Resolves full path correctly" name="GetFullPath.Resolves full path correctly" time="0.019" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+  <test-suite type="TestFixture" name="C:\Users\Dave\Documents\GitHub\pester\Functions\TestsRunningInCleanRunspace.Tests.ps1" executed="True" result="Failure" success="False" time="12.3475" asserts="0" description="C:\Users\Dave\Documents\GitHub\pester\Functions\TestsRunningInCleanRunspace.Tests.ps1">
+    <results>
+      <test-suite type="TestFixture" name="Tests running in clean runspace" executed="True" result="Failure" success="False" time="8.1157" asserts="0" description="Tests running in clean runspace">
+        <results>
+          <test-case description="It - Skip and Pending tests" name="Tests running in clean runspace.It - Skip and Pending tests" time="2.2808" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="It - It without ScriptBlock fails" name="Tests running in clean runspace.It - It without ScriptBlock fails" time="2.0029" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Invoke-Pester - PassThru output" name="Tests running in clean runspace.Invoke-Pester - PassThru output" time="2.0231" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Produces valid NUnit output when syntax errors occur in test scripts" name="Tests running in clean runspace.Produces valid NUnit output when syntax errors occur in test scripts" time="1.8089" asserts="0" success="False" result="Failure" executed="True">
+            <failure>
+              <message>Expected: value to not be empty</message>
+              <stack-trace>at line: 115 in C:\Users\Dave\Documents\GitHub\pester\Functions\TestsRunningInCleanRunspace.Tests.ps1
+115:         $xml.'test-results'.'test-suite'.results.'test-suite'.name | Should Not BeNullOrEmpty
+</stack-trace>
+            </failure>
+          </test-case>
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Guarantee It fail on setup or teardown fail (running in clean runspace)" executed="True" result="Success" success="False" time="4.2318" asserts="0" description="Guarantee It fail on setup or teardown fail (running in clean runspace)">
+        <results>
+          <test-case description="It fails if BeforeEach fails" name="Guarantee It fail on setup or teardown fail (running in clean runspace).It fails if BeforeEach fails" time="2.1316" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="It fails if AfterEach fails" name="Guarantee It fail on setup or teardown fail (running in clean runspace).It fails if AfterEach fails" time="2.1003" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+  <test-suite type="TestFixture" name="C:\Users\Dave\Documents\GitHub\pester\Pester.Tests.ps1" executed="True" result="Success" success="False" time="1.7476" asserts="0" description="C:\Users\Dave\Documents\GitHub\pester\Pester.Tests.ps1">
+    <results>
+      <test-suite type="TestFixture" name="Clean treatment of the $error variable" executed="True" result="Success" success="False" time="0.3802" asserts="0" description="Clean treatment of the $error variable">
+        <results>
+          <test-suite type="TestFixture" name="A Context" executed="True" result="Success" success="False" time="0.2592" asserts="0" description="A Context">
+            <results>
+              <test-case description="Performs a successful test" name="Clean treatment of the $error variable.A Context.Performs a successful test" time="0.2592" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-case description="Did not add anything to the $error variable" name="Clean treatment of the $error variable.Did not add anything to the $error variable" time="0.121" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="SafeCommands table" executed="True" result="Success" success="False" time="0.159" asserts="0" description="SafeCommands table">
+        <results>
+          <test-case description="The SafeCommands table contains all commands that are called from the module" name="SafeCommands table.The SafeCommands table contains all commands that are called from the module" time="0.159" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Style rules" executed="True" result="Success" success="False" time="0.2661" asserts="0" description="Style rules">
+        <results>
+          <test-case description="Pester source files contain no trailing whitespace" name="Style rules.Pester source files contain no trailing whitespace" time="0.2407" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Pester Source Files all end with a newline" name="Style rules.Pester Source Files all end with a newline" time="0.0254" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="ResolveTestScripts" executed="True" result="Success" success="False" time="0.9423" asserts="0" description="ResolveTestScripts">
+        <results>
+          <test-suite type="TestFixture" name="Passing in Dictionaries instead of Strings" executed="True" result="Success" success="False" time="0.3124" asserts="0" description="Passing in Dictionaries instead of Strings">
+            <results>
+              <test-case description="Allows the use of a &quot;P&quot; key instead of &quot;Path&quot;" name="ResolveTestScripts.Passing in Dictionaries instead of Strings.Allows the use of a &quot;P&quot; key instead of &quot;Path&quot;" time="0.1387" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Allows the use of an &quot;Arguments&quot; key in the dictionary" name="ResolveTestScripts.Passing in Dictionaries instead of Strings.Allows the use of an &quot;Arguments&quot; key in the dictionary" time="0.0192" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Allows the use of an &quot;Args&quot; key in the dictionary" name="ResolveTestScripts.Passing in Dictionaries instead of Strings.Allows the use of an &quot;Args&quot; key in the dictionary" time="0.022" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Allows the use of an &quot;A&quot; key in the dictionary" name="ResolveTestScripts.Passing in Dictionaries instead of Strings.Allows the use of an &quot;A&quot; key in the dictionary" time="0.0244" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Allows the use of a &quot;Parameters&quot; key in the dictionary" name="ResolveTestScripts.Passing in Dictionaries instead of Strings.Allows the use of a &quot;Parameters&quot; key in the dictionary" time="0.0263" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Allows the use of a &quot;Params&quot; key in the dictionary" name="ResolveTestScripts.Passing in Dictionaries instead of Strings.Allows the use of a &quot;Params&quot; key in the dictionary" time="0.034" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Throws an error if no Path is specified" name="ResolveTestScripts.Passing in Dictionaries instead of Strings.Throws an error if no Path is specified" time="0.0227" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Throws an error if a Parameters key is used, but does not contain an IDictionary object" name="ResolveTestScripts.Passing in Dictionaries instead of Strings.Throws an error if a Parameters key is used, but does not contain an IDictionary object" time="0.0249" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-case description="Resolves non-wildcarded file paths regardless of whether the file ends with Tests.ps1" name="ResolveTestScripts.Resolves non-wildcarded file paths regardless of whether the file ends with Tests.ps1" time="0.5467" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Finds only *.Tests.ps1 files when the path contains wildcards" name="ResolveTestScripts.Finds only *.Tests.ps1 files when the path contains wildcards" time="0.0216" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Finds only *.Tests.ps1 files when the path refers to a directory and does not contain wildcards" name="ResolveTestScripts.Finds only *.Tests.ps1 files when the path refers to a directory and does not contain wildcards" time="0.0176" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Assigns empty array and hashtable to the Arguments and Parameters properties when none are specified by the caller" name="ResolveTestScripts.Assigns empty array and hashtable to the Arguments and Parameters properties when none are specified by the caller" time="0.044" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

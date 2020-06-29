@@ -15,53 +15,86 @@ const resolvePath = async filename => {
     return path;
 };
 
+// edited from https://stackoverflow.com/a/15643382
+const findNested = (obj, key, pwshScript, res) => {
+    var i,
+        proto = Object.prototype,
+        ts = proto.toString,
+        hasOwn = proto.hasOwnProperty.bind(obj);
+
+    if ('[object Array]' !== ts.call(res)) res = [];
+
+    for (i in obj) {
+        if (hasOwn(i)) {
+            if (i === key) {
+                obj[i].pwshScript = pwshScript;
+                res.push(obj[i]);
+            } else if ('[object Array]' === ts.call(obj[i]) || '[object Object]' === ts.call(obj[i])) {
+                if(obj[i] && obj[i].name && obj[i].name.includes('.ps1')) {
+                    pwshScript = obj[i].name
+                }
+                findNested(obj[i], key, pwshScript, res);
+            }
+        }
+    }
+
+    return res;
+}
+
 async function parseFile(file) {
     core.info(`Parsing file ${file}`);
-    let count = 0;
-    let skipped = 0;
-    let annotations = [];
+    let count = 0,
+        skipped = 0,
+        annotations = [],
+        fileName;
 
     const data = await fs.promises.readFile(file);
     const testResults = JSON.parse(parser.xml2json(data, { compact: true }))['test-results'];
 
-    const testCases = testResults['test-suite']['results']['test-suite']['results']['test-suite']['results']['test-case'];
+    let testObj = findNested(testResults, 'test-case', '', []);
 
-    for (const testCase of testCases) {
-        count++;
+    for (let testCases of testObj) {
+        fileName = testCases.pwshScript;
 
-        if (testCase.skipped) skipped++;
-        
-        if (testCase.failure || testCase.error) {
-            const stackTrace = (
-                (testCase.failure && testCase.failure['stack-trace']._text) ||
-                (testCase.error && testCase.error['stack-trace']._text) ||
-                ''
-            ).trim();
+        // place non-iterable test cases in array to allow iterating
+        !Array.isArray(testCases) ? testCases = [testCases] : ''
 
-            const message = (
-                (testCase.failure && testCase.failure.message._text) ||
-                (testCase.error && testCase.error.message._text) ||
-                stackTrace.split('\n').slice(0, 2).join('\n')
-            ).trim();
-
-            const fileName = 'get-emoji.tests.ps1';
-            const line = 7;
-
-            const path = await resolvePath(fileName);
-            const title = `${fileName}.${testCase._attributes.name}`;
-            core.info(`${path}:${line} | ${message.replace(/\n/g, ' ')}`);
-
-            annotations.push({
-                path,
-                start_line: line,
-                end_line: line,
-                start_column: 0,
-                end_column: 0,
-                annotation_level: 'failure',
-                title,
-                message,
-                raw_details: stackTrace
-            });
+        for (const testCase of testCases) {
+            count++;
+    
+            if (testCase.skipped) skipped++;
+            
+            if (testCase.failure || testCase.error) {
+                const stackTrace = (
+                    (testCase.failure && testCase.failure['stack-trace']._text) ||
+                    (testCase.error && testCase.error['stack-trace']._text) ||
+                    ''
+                ).trim();
+    
+                const message = (
+                    (testCase.failure && testCase.failure.message._text) ||
+                    (testCase.error && testCase.error.message._text) ||
+                    stackTrace.split('\n').slice(0, 2).join('\n')
+                ).trim();
+    
+                const line = 7;
+    
+                const path = await resolvePath(fileName);
+                const title = `${fileName}.${testCase._attributes.name}`;
+                core.info(`${path}:${line} | ${message.replace(/\n/g, ' ')}`);
+    
+                annotations.push({
+                    path,
+                    start_line: line,
+                    end_line: line,
+                    start_column: 0,
+                    end_column: 0,
+                    annotation_level: 'failure',
+                    title,
+                    message,
+                    raw_details: stackTrace
+                });
+            }
         }
     }
 
