@@ -10,12 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-
-    # Runs a single command using the runners shell
-    - name: Run a one-line script
-      run: echo $GITHUB_WORKSPACE
       
     - name: Azure PowerShell Action
       uses: Azure/powershell@v1
@@ -24,12 +19,9 @@ jobs:
            Install-Module -Name Pester -Force
            Invoke-Pester './tests/*.tests.ps1' -OutputFile './test-reports/TEST-CI.xml' -OutputFormat 'NUnitXML'
         azPSVersion: 'latest'
-        
-    - name: Cat test file
-      run: cat './test-reports/TEST-CI.xml'
 
     - name: Generate Pester Report
-      uses: bart-jansen/pester-tests@master # Uses an action in the root directory
+      uses: bart-jansen/action-pester-report@master
       with:
         github_token:  ${{ secrets.GITHUB_TOKEN }}
     

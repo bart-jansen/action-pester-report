@@ -1,5 +1,5 @@
 {
-  "name": "pester-tests",
+  "name": "action-pester-report",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bart-jansen/pester-tests.git"
+    "url": "git+https://github.com/bart-jansen/action-pester-report.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bart-jansen/pester-tests/issues"
+    "url": "https://github.com/bart-jansen/action-pester-report/issues"
   },
-  "homepage": "https://github.com/bart-jansen/pester-tests#readme",
+  "homepage": "https://github.com/bart-jansen/action-pester-report#readme",
   "dependencies": {
     "@actions/core": "^1.2.4",
     "@actions/github": "^3.0.0",
