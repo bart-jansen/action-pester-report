@@ -10,4 +10,8 @@ Describe "Get-Emoji" {
     It "Gets wine" {
         Get-Emoji -Emoji wine | Should -Be '🍷'
     }
+
+    It "Gets balloon" {
+        Get-Emoji -Emoji balloon | Should -Be '🎈'
+    }
 }
