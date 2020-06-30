@@ -5,7 +5,7 @@ const parser = require('xml-js');
 
 const resolvePath = async filename => {
     core.debug(`Resolving path for ${filename}`);
-    const globber = await glob.create(`**/${filename}.*`, { followSymbolicLinks: false });
+    const globber = await glob.create(`**/${filename}*`, { followSymbolicLinks: false });
     const results = await globber.glob();
     core.debug(`Matched files: ${results}`);
     const searchPath = globber.getSearchPaths()[0];

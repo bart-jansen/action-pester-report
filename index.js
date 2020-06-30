@@ -39,7 +39,7 @@ const { parseTestReports } = require('./utils.js');
             }
         };
     
-        core.debug(JSON.stringify(createCheckRequest, null, 2));
+        core.debug(JSON.stringify(createCheckRequest));
     
         const octokit = github.getOctokit(githubToken);
         await octokit.checks.create(createCheckRequest);

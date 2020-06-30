@@ -1397,7 +1397,7 @@ const { parseTestReports } = __webpack_require__(278);
             }
         };
     
-        core.debug(JSON.stringify(createCheckRequest, null, 2));
+        core.debug(JSON.stringify(createCheckRequest));
     
         const octokit = github.getOctokit(githubToken);
         await octokit.checks.create(createCheckRequest);
@@ -2501,7 +2501,7 @@ const parser = __webpack_require__(421);
 
 const resolvePath = async filename => {
     core.debug(`Resolving path for ${filename}`);
-    const globber = await glob.create(`**/${filename}.*`, { followSymbolicLinks: false });
+    const globber = await glob.create(`**/${filename}*`, { followSymbolicLinks: false });
     const results = await globber.glob();
     core.debug(`Matched files: ${results}`);
     const searchPath = globber.getSearchPaths()[0];
