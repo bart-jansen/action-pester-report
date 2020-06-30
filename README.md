@@ -1,5 +1,7 @@
 # GitHub Action: Generate Pester test reports
 
+![](https://github.com/bart-jansen/action-pester-report/workflows/build/badge.svg)
+
 This action generates a Github Actions Check report with annotations for NUnit-formatted Pester tests.
 
 ## Inputs
