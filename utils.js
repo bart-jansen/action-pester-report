@@ -78,7 +78,7 @@ async function parseFile(file) {
                     stackTrace.split('\n').slice(0, 2).join('\n')
                 ).trim();
     
-                const line = 7;
+                const line = 11;
     
                 const path = await resolvePath(fileName);
                 const title = testCase._attributes.name;
