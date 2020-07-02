@@ -2511,6 +2511,16 @@ const resolvePath = async filename => {
     return path;
 };
 
+const resolveLine = stackTrace => {
+    // linenumber hidden in filename:linenumber 
+    // e.g. C:\htdocs\tests\Get-Emoji.Test.ps1:7
+    let lineNumber = stackTrace.split("ps1:").pop();
+
+    // remove any unwanted strings with parseInt
+    // e.g. parseInt('412 bla') returns 412
+    return parseInt(lineNumber) || 0;
+}
+
 // edited from https://stackoverflow.com/a/15643382
 const findNested = (obj, key, pwshScript, res) => {
     var i,
@@ -2574,7 +2584,7 @@ async function parseFile(file) {
                     stackTrace.split('\n').slice(0, 2).join('\n')
                 ).trim();
     
-                const line = 11;
+                const line = resolveLine(message);
     
                 const path = await resolvePath(fileName);
                 const title = testCase._attributes.name;
