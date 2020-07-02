@@ -2538,6 +2538,7 @@ const findNested = (obj, key, pwshScript, res) => {
             } else if ('[object Array]' === ts.call(obj[i]) || '[object Object]' === ts.call(obj[i])) {
                 if(obj[i] && obj[i].name && obj[i].name.includes('.ps1')) {
                     // get pwsh file name from full path
+                    /* eslint-disable no-useless-escape */
                     pwshScript = obj[i].name.replace(/^.*[\\\/]/, '');
                 }
                 findNested(obj[i], key, pwshScript, res);

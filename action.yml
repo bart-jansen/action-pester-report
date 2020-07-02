@@ -7,7 +7,6 @@ inputs:
   github_token:
     description: 'Github Token'
     required: true
-    default: '**/test-reports/TEST-*.xml'
   path:
     description: 'pester xml report path in glob format'
     required: false
